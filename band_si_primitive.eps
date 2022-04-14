@@ -1,0 +1,5158 @@
+%!PS-Adobe-2.0
+%%Title: up.eps
+%%Creator: gnuplot 5.4 patchlevel 2
+%%CreationDate: Thu Apr 14 17:44:51 2022
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 554 770
+%%Orientation: Landscape
+%%Pages: (atend)
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape true def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -66 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 554 50 lineto 554 770 lineto 50 770 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.2 (Dec 2017)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTB {BL [] LCb DL} def
+/LTw {PL [] 1 setgray} def
+/LTb {PL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto closepath gsave fill grestore stroke} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/Metrics {ExtendTextBox Gswidth} def
+/Lwidth {currentpoint stroke M 0 vshift R Metrics} def
+/Rwidth {currentpoint stroke M dup stringwidth pop neg vshift R Metrics} def
+/Cwidth {currentpoint stroke M dup stringwidth pop -2 div vshift R Metrics} def
+/GLwidth {currentpoint stroke M 0 vshift R {ExtendTextBox} forall} def
+/GRwidth {currentpoint stroke M dup Gwidth vshift R {ExtendTextBox} forall} def
+/GCwidth {currentpoint stroke M dup Gwidth 2 div vshift R {ExtendTextBox} forall} def
+/GLwidth2 {0 Gwidth AddGlyphWidth} def
+/GRwidth2 {Gwidth -1 mul 0 AddGlyphWidth} def
+/GCwidth2 {Gwidth 2 div dup -1 mul AddGlyphWidth} def
+/AddGlyphWidth { dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+                 dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse } def
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {Metrics pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get Gswidth pop -2 div
+     dup 0 R} {dup 6 get Gswidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (up.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.4 patchlevel 2)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Thu Apr 14 17:44:51 2022)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Support for boxed text - Ethan A Merritt Sep 2016
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { dup type /stringtype eq
+    { Boxing { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if }
+    {} ifelse} def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PL PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 200 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+2731 1349 M
+63 0 V
+4116 0 R
+-63 0 V
+stroke
+2611 1349 M
+[ [(Helvetica) 200.0 0.0 true true 0 (-5)]
+] -66.7 MRshow
+/Helvetica findfont 200 scalefont setfont
+/vshift -66 def
+1.000 UL
+LTb
+LCb setrgbcolor
+2731 2018 M
+63 0 V
+4116 0 R
+-63 0 V
+stroke
+2611 2018 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 0)]
+] -66.7 MRshow
+/Helvetica findfont 200 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2731 2686 M
+63 0 V
+4116 0 R
+-63 0 V
+stroke
+2611 2686 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 5)]
+] -66.7 MRshow
+/Helvetica findfont 200 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2731 3355 M
+63 0 V
+4116 0 R
+-63 0 V
+stroke
+2611 3355 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 10)]
+] -66.7 MRshow
+/Helvetica findfont 200 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2731 4024 M
+63 0 V
+4116 0 R
+-63 0 V
+stroke
+2611 4024 M
+[ [(Helvetica) 200.0 0.0 true true 0 ( 15)]
+] -66.7 MRshow
+/Helvetica findfont 200 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+2731 948 M
+0 63 V
+0 3280 R
+0 -63 V
+stroke
+2731 748 M
+[ [(Helvetica) 200.0 0.0 true true 0 (L)]
+] -66.7 MCshow
+/Helvetica findfont 200 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+3932 948 M
+0 63 V
+0 3280 R
+0 -63 V
+stroke
+3932 748 M
+[ [(Helvetica) 200.0 0.0 true true 0 (G)]
+] -66.7 MCshow
+/Helvetica findfont 200 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+4938 948 M
+0 63 V
+0 3280 R
+0 -63 V
+stroke
+4938 748 M
+[ [(Helvetica) 200.0 0.0 true true 0 (X)]
+] -66.7 MCshow
+/Helvetica findfont 200 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+5602 948 M
+0 63 V
+0 3280 R
+0 -63 V
+stroke
+5602 748 M
+[ [(Helvetica) 200.0 0.0 true true 0 (K)]
+] -66.7 MCshow
+/Helvetica findfont 200 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+6897 948 M
+0 63 V
+0 3280 R
+0 -63 V
+stroke
+6897 748 M
+[ [(Helvetica) 200.0 0.0 true true 0 (G)]
+] -66.7 MCshow
+/Helvetica findfont 200 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+2731 4291 N
+0 -3343 V
+4179 0 V
+0 3343 V
+-4179 0 V
+Z stroke
+1.000 UP
+5.000 UL
+LTa
+LCa setrgbcolor
+3933 949 M
+0 3343 V
+stroke
+LTa
+LCa setrgbcolor
+4939 949 M
+0 3343 V
+stroke
+LTa
+LCa setrgbcolor
+2701 2019 M
+4197 0 V
+stroke
+LTa
+LCa setrgbcolor
+5603 949 M
+0 3343 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+2061 2619 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Helvetica) 240.0 0.0 true true 0 (Energy \(eV\))]
+] -80.0 MCshow
+grestore
+/Helvetica findfont 200 scalefont setfont
+LTb
+% Begin plot #1
+1.000 UP
+1.000 UL
+LTb
+1.00 0.00 0.00 C
+0.708 UP
+4913 952 Circle
+0.711 UP
+4938 978 Circle
+0.711 UP
+4955 978 Circle
+0.711 UP
+4971 972 Circle
+0.711 UP
+4988 966 Circle
+0.711 UP
+5005 960 Circle
+0.708 UP
+5021 954 Circle
+0.708 UP
+5038 948 Circle
+0.576 UP
+2731 1096 Circle
+0.576 UP
+2762 1097 Circle
+0.579 UP
+2793 1103 Circle
+0.582 UP
+2823 1111 Circle
+0.585 UP
+2854 1122 Circle
+0.591 UP
+2885 1136 Circle
+0.594 UP
+2916 1153 Circle
+0.600 UP
+2947 1171 Circle
+0.603 UP
+2977 1191 Circle
+0.609 UP
+3008 1212 Circle
+0.612 UP
+3039 1235 Circle
+0.615 UP
+3070 1259 Circle
+0.621 UP
+3101 1284 Circle
+0.624 UP
+3131 1309 Circle
+0.627 UP
+3162 1336 Circle
+0.630 UP
+3193 1363 Circle
+0.633 UP
+3224 1392 Circle
+0.636 UP
+3255 1420 Circle
+0.639 UP
+3285 1449 Circle
+0.642 UP
+3316 1479 Circle
+0.645 UP
+3347 1510 Circle
+0.645 UP
+3378 1540 Circle
+0.648 UP
+3409 1571 Circle
+0.651 UP
+3439 1603 Circle
+0.651 UP
+3470 1634 Circle
+0.654 UP
+3501 1666 Circle
+0.654 UP
+3532 1698 Circle
+0.657 UP
+3563 1730 Circle
+0.657 UP
+3593 1762 Circle
+0.657 UP
+3624 1793 Circle
+0.657 UP
+3655 1825 Circle
+0.657 UP
+3686 1855 Circle
+0.657 UP
+3717 1885 Circle
+0.654 UP
+3747 1913 Circle
+0.654 UP
+3778 1940 Circle
+0.651 UP
+3809 1964 Circle
+0.648 UP
+3840 1984 Circle
+0.645 UP
+3871 2000 Circle
+0.642 UP
+3901 2011 Circle
+0.642 UP
+3932 2014 Circle
+0.642 UP
+3957 2014 Circle
+0.645 UP
+3982 2011 Circle
+0.651 UP
+4008 2003 Circle
+0.660 UP
+4033 1990 Circle
+0.672 UP
+4058 1974 Circle
+0.684 UP
+4083 1954 Circle
+0.696 UP
+4108 1931 Circle
+0.708 UP
+4133 1907 Circle
+0.717 UP
+4158 1881 Circle
+0.726 UP
+4184 1854 Circle
+0.732 UP
+4209 1826 Circle
+0.738 UP
+4234 1798 Circle
+0.744 UP
+4259 1769 Circle
+0.747 UP
+4284 1739 Circle
+0.753 UP
+4309 1710 Circle
+0.756 UP
+4334 1680 Circle
+0.756 UP
+4360 1650 Circle
+0.759 UP
+4385 1619 Circle
+0.759 UP
+4410 1589 Circle
+0.762 UP
+4435 1559 Circle
+0.762 UP
+4460 1528 Circle
+0.762 UP
+4485 1498 Circle
+0.762 UP
+4511 1468 Circle
+0.759 UP
+4536 1437 Circle
+0.759 UP
+4561 1407 Circle
+0.756 UP
+4586 1377 Circle
+0.753 UP
+4611 1347 Circle
+0.753 UP
+4636 1317 Circle
+0.750 UP
+4661 1287 Circle
+0.747 UP
+4687 1258 Circle
+0.744 UP
+4712 1228 Circle
+0.741 UP
+4737 1199 Circle
+0.738 UP
+4762 1170 Circle
+0.732 UP
+4787 1142 Circle
+0.729 UP
+4812 1114 Circle
+0.726 UP
+4837 1086 Circle
+0.723 UP
+4863 1058 Circle
+0.720 UP
+4888 1031 Circle
+0.714 UP
+4913 1004 Circle
+0.711 UP
+4938 978 Circle
+0.711 UP
+4955 978 Circle
+0.714 UP
+4971 985 Circle
+0.714 UP
+4988 992 Circle
+0.714 UP
+5005 998 Circle
+0.717 UP
+5021 1005 Circle
+0.717 UP
+5038 1012 Circle
+0.720 UP
+5054 1019 Circle
+0.720 UP
+5071 1026 Circle
+0.723 UP
+5088 1033 Circle
+0.726 UP
+5104 1040 Circle
+0.726 UP
+5121 1047 Circle
+0.729 UP
+5138 1053 Circle
+0.732 UP
+5154 1060 Circle
+0.732 UP
+5171 1065 Circle
+0.735 UP
+5188 1071 Circle
+0.735 UP
+5204 1076 Circle
+0.738 UP
+5221 1081 Circle
+0.738 UP
+5237 1085 Circle
+0.738 UP
+5254 1089 Circle
+0.738 UP
+5271 1092 Circle
+0.738 UP
+5287 1094 Circle
+0.738 UP
+5304 1096 Circle
+0.738 UP
+5321 1097 Circle
+0.735 UP
+5337 1097 Circle
+0.735 UP
+5354 1097 Circle
+0.732 UP
+5370 1097 Circle
+0.732 UP
+5387 1096 Circle
+0.729 UP
+5404 1094 Circle
+0.726 UP
+5420 1093 Circle
+0.723 UP
+5437 1090 Circle
+0.723 UP
+5454 1088 Circle
+0.720 UP
+5470 1085 Circle
+0.717 UP
+5487 1082 Circle
+0.717 UP
+5504 1078 Circle
+0.714 UP
+5520 1075 Circle
+0.714 UP
+5537 1071 Circle
+0.714 UP
+5553 1068 Circle
+0.714 UP
+5570 1064 Circle
+0.711 UP
+5587 1060 Circle
+0.711 UP
+5603 1056 Circle
+0.711 UP
+5636 1056 Circle
+0.711 UP
+5669 1068 Circle
+0.711 UP
+5701 1082 Circle
+0.711 UP
+5734 1096 Circle
+0.711 UP
+5767 1111 Circle
+0.711 UP
+5799 1127 Circle
+0.711 UP
+5832 1144 Circle
+0.711 UP
+5865 1162 Circle
+0.711 UP
+5897 1180 Circle
+0.711 UP
+5930 1200 Circle
+0.711 UP
+5963 1220 Circle
+0.711 UP
+5995 1242 Circle
+0.711 UP
+6028 1264 Circle
+0.711 UP
+6061 1287 Circle
+0.711 UP
+6093 1310 Circle
+0.708 UP
+6126 1335 Circle
+0.708 UP
+6159 1361 Circle
+0.708 UP
+6191 1387 Circle
+0.708 UP
+6224 1414 Circle
+0.705 UP
+6257 1442 Circle
+0.705 UP
+6289 1470 Circle
+0.705 UP
+6322 1500 Circle
+0.702 UP
+6355 1530 Circle
+0.702 UP
+6387 1561 Circle
+0.699 UP
+6420 1592 Circle
+0.696 UP
+6453 1624 Circle
+0.696 UP
+6485 1656 Circle
+0.693 UP
+6518 1689 Circle
+0.690 UP
+6551 1723 Circle
+0.687 UP
+6583 1756 Circle
+0.684 UP
+6616 1790 Circle
+0.681 UP
+6649 1824 Circle
+0.675 UP
+6681 1857 Circle
+0.672 UP
+6714 1890 Circle
+0.666 UP
+6747 1921 Circle
+0.660 UP
+6779 1950 Circle
+0.654 UP
+6812 1975 Circle
+0.648 UP
+6845 1996 Circle
+0.642 UP
+6877 2009 Circle
+0.642 UP
+6910 2014 Circle
+0.645 UP
+2731 1856 Circle
+0.645 UP
+2762 1857 Circle
+0.645 UP
+2793 1857 Circle
+0.645 UP
+2823 1858 Circle
+0.645 UP
+2854 1859 Circle
+0.645 UP
+2885 1860 Circle
+0.645 UP
+2916 1862 Circle
+0.645 UP
+2947 1864 Circle
+0.642 UP
+2977 1866 Circle
+0.642 UP
+3008 1869 Circle
+0.642 UP
+3039 1872 Circle
+0.642 UP
+3070 1875 Circle
+0.639 UP
+3101 1879 Circle
+0.639 UP
+3131 1883 Circle
+0.639 UP
+3162 1887 Circle
+0.639 UP
+3193 1891 Circle
+0.636 UP
+3224 1896 Circle
+0.636 UP
+3255 1901 Circle
+0.636 UP
+3285 1906 Circle
+0.633 UP
+3316 1912 Circle
+0.633 UP
+3347 1917 Circle
+0.633 UP
+3378 1923 Circle
+0.633 UP
+3409 1929 Circle
+0.633 UP
+3439 1936 Circle
+0.633 UP
+3470 1942 Circle
+0.633 UP
+3501 1949 Circle
+0.633 UP
+3532 1955 Circle
+0.633 UP
+3563 1962 Circle
+0.633 UP
+3593 1968 Circle
+0.633 UP
+3624 1975 Circle
+0.633 UP
+3655 1981 Circle
+0.636 UP
+3686 1987 Circle
+0.636 UP
+3717 1993 Circle
+0.636 UP
+3747 1998 Circle
+0.639 UP
+3778 2002 Circle
+0.639 UP
+3809 2006 Circle
+0.639 UP
+3840 2010 Circle
+0.642 UP
+3871 2012 Circle
+0.642 UP
+3901 2014 Circle
+0.642 UP
+3932 2014 Circle
+0.642 UP
+3957 2014 Circle
+0.642 UP
+3982 2012 Circle
+0.639 UP
+4008 2008 Circle
+0.633 UP
+4033 2000 Circle
+0.630 UP
+4058 1990 Circle
+0.624 UP
+4083 1978 Circle
+0.621 UP
+4108 1965 Circle
+0.615 UP
+4133 1951 Circle
+0.612 UP
+4158 1936 Circle
+0.609 UP
+4184 1921 Circle
+0.603 UP
+4209 1905 Circle
+0.603 UP
+4234 1889 Circle
+0.600 UP
+4259 1874 Circle
+0.597 UP
+4284 1858 Circle
+0.594 UP
+4309 1843 Circle
+0.594 UP
+4334 1828 Circle
+0.591 UP
+4360 1814 Circle
+0.591 UP
+4385 1800 Circle
+0.591 UP
+4410 1786 Circle
+0.588 UP
+4435 1773 Circle
+0.588 UP
+4460 1761 Circle
+0.588 UP
+4485 1749 Circle
+0.588 UP
+4511 1737 Circle
+0.588 UP
+4536 1726 Circle
+0.588 UP
+4561 1716 Circle
+0.585 UP
+4586 1707 Circle
+0.585 UP
+4611 1698 Circle
+0.585 UP
+4636 1689 Circle
+0.585 UP
+4661 1681 Circle
+0.585 UP
+4687 1674 Circle
+0.585 UP
+4712 1668 Circle
+0.585 UP
+4737 1662 Circle
+0.585 UP
+4762 1657 Circle
+0.585 UP
+4787 1653 Circle
+0.585 UP
+4812 1649 Circle
+0.585 UP
+4837 1646 Circle
+0.585 UP
+4863 1643 Circle
+0.585 UP
+4888 1642 Circle
+0.585 UP
+4913 1641 Circle
+0.585 UP
+4938 1640 Circle
+0.585 UP
+4955 1640 Circle
+0.585 UP
+4971 1640 Circle
+0.582 UP
+4988 1638 Circle
+0.579 UP
+5005 1635 Circle
+0.573 UP
+5021 1630 Circle
+0.570 UP
+5038 1625 Circle
+0.564 UP
+5054 1619 Circle
+0.555 UP
+5071 1612 Circle
+0.549 UP
+5088 1604 Circle
+0.543 UP
+5104 1596 Circle
+0.537 UP
+5121 1587 Circle
+0.531 UP
+5138 1578 Circle
+0.525 UP
+5154 1569 Circle
+0.519 UP
+5171 1560 Circle
+0.513 UP
+5188 1551 Circle
+0.507 UP
+5204 1542 Circle
+0.504 UP
+5221 1533 Circle
+0.498 UP
+5237 1525 Circle
+0.495 UP
+5254 1516 Circle
+0.489 UP
+5271 1509 Circle
+0.486 UP
+5287 1501 Circle
+0.483 UP
+5304 1494 Circle
+0.480 UP
+5321 1487 Circle
+0.477 UP
+5337 1481 Circle
+0.474 UP
+5354 1475 Circle
+0.471 UP
+5370 1469 Circle
+0.471 UP
+5387 1464 Circle
+0.468 UP
+5404 1460 Circle
+0.465 UP
+5420 1456 Circle
+0.465 UP
+5437 1453 Circle
+0.462 UP
+5454 1450 Circle
+0.462 UP
+5470 1448 Circle
+0.462 UP
+5487 1447 Circle
+0.462 UP
+5504 1446 Circle
+0.462 UP
+5520 1445 Circle
+0.462 UP
+5537 1445 Circle
+0.462 UP
+5553 1446 Circle
+0.462 UP
+5570 1448 Circle
+0.462 UP
+5587 1450 Circle
+0.462 UP
+5603 1452 Circle
+0.462 UP
+5636 1452 Circle
+0.462 UP
+5669 1445 Circle
+0.459 UP
+5701 1440 Circle
+0.459 UP
+5734 1437 Circle
+0.462 UP
+5767 1437 Circle
+0.465 UP
+5799 1439 Circle
+0.468 UP
+5832 1444 Circle
+0.471 UP
+5865 1450 Circle
+0.474 UP
+5897 1458 Circle
+0.480 UP
+5930 1468 Circle
+0.483 UP
+5963 1480 Circle
+0.489 UP
+5995 1493 Circle
+0.492 UP
+6028 1508 Circle
+0.498 UP
+6061 1523 Circle
+0.501 UP
+6093 1540 Circle
+0.507 UP
+6126 1558 Circle
+0.510 UP
+6159 1577 Circle
+0.516 UP
+6191 1597 Circle
+0.519 UP
+6224 1618 Circle
+0.525 UP
+6257 1639 Circle
+0.531 UP
+6289 1661 Circle
+0.534 UP
+6322 1684 Circle
+0.540 UP
+6355 1707 Circle
+0.546 UP
+6387 1730 Circle
+0.552 UP
+6420 1754 Circle
+0.555 UP
+6453 1778 Circle
+0.561 UP
+6485 1802 Circle
+0.570 UP
+6518 1825 Circle
+0.576 UP
+6551 1849 Circle
+0.582 UP
+6583 1872 Circle
+0.591 UP
+6616 1894 Circle
+0.597 UP
+6649 1916 Circle
+0.606 UP
+6681 1936 Circle
+0.612 UP
+6714 1955 Circle
+0.621 UP
+6747 1972 Circle
+0.627 UP
+6779 1986 Circle
+0.633 UP
+6812 1998 Circle
+0.636 UP
+6845 2007 Circle
+0.642 UP
+6877 2012 Circle
+0.642 UP
+6910 2014 Circle
+0.645 UP
+2731 1856 Circle
+0.645 UP
+2762 1857 Circle
+0.645 UP
+2793 1857 Circle
+0.645 UP
+2823 1858 Circle
+0.645 UP
+2854 1859 Circle
+0.645 UP
+2885 1860 Circle
+0.645 UP
+2916 1862 Circle
+0.645 UP
+2947 1864 Circle
+0.642 UP
+2977 1866 Circle
+0.642 UP
+3008 1869 Circle
+0.642 UP
+3039 1872 Circle
+0.642 UP
+3070 1875 Circle
+0.639 UP
+3101 1879 Circle
+0.639 UP
+3131 1883 Circle
+0.639 UP
+3162 1887 Circle
+0.639 UP
+3193 1891 Circle
+0.636 UP
+3224 1896 Circle
+0.636 UP
+3255 1901 Circle
+0.636 UP
+3285 1906 Circle
+0.633 UP
+3316 1912 Circle
+0.633 UP
+3347 1917 Circle
+0.633 UP
+3378 1923 Circle
+0.633 UP
+3409 1929 Circle
+0.633 UP
+3439 1936 Circle
+0.633 UP
+3470 1942 Circle
+0.633 UP
+3501 1949 Circle
+0.633 UP
+3532 1955 Circle
+0.633 UP
+3563 1962 Circle
+0.633 UP
+3593 1968 Circle
+0.633 UP
+3624 1975 Circle
+0.633 UP
+3655 1981 Circle
+0.636 UP
+3686 1987 Circle
+0.636 UP
+3717 1993 Circle
+0.636 UP
+3747 1998 Circle
+0.639 UP
+3778 2002 Circle
+0.639 UP
+3809 2006 Circle
+0.639 UP
+3840 2010 Circle
+0.642 UP
+3871 2012 Circle
+0.642 UP
+3901 2014 Circle
+0.642 UP
+3932 2014 Circle
+0.642 UP
+3957 2014 Circle
+0.642 UP
+3982 2012 Circle
+0.639 UP
+4008 2008 Circle
+0.633 UP
+4033 2000 Circle
+0.630 UP
+4058 1990 Circle
+0.624 UP
+4083 1978 Circle
+0.621 UP
+4108 1965 Circle
+0.615 UP
+4133 1951 Circle
+0.612 UP
+4158 1936 Circle
+0.609 UP
+4184 1921 Circle
+0.603 UP
+4209 1905 Circle
+0.603 UP
+4234 1889 Circle
+0.600 UP
+4259 1874 Circle
+0.597 UP
+4284 1858 Circle
+0.594 UP
+4309 1843 Circle
+0.594 UP
+4334 1828 Circle
+0.591 UP
+4360 1814 Circle
+0.591 UP
+4385 1800 Circle
+0.591 UP
+4410 1786 Circle
+0.588 UP
+4435 1773 Circle
+0.588 UP
+4460 1761 Circle
+0.588 UP
+4485 1749 Circle
+0.588 UP
+4511 1737 Circle
+0.588 UP
+4536 1726 Circle
+0.585 UP
+4561 1716 Circle
+0.585 UP
+4586 1707 Circle
+0.585 UP
+4611 1698 Circle
+0.585 UP
+4636 1689 Circle
+0.585 UP
+4661 1681 Circle
+0.585 UP
+4687 1674 Circle
+0.585 UP
+4712 1668 Circle
+0.585 UP
+4737 1662 Circle
+0.585 UP
+4762 1657 Circle
+0.585 UP
+4787 1653 Circle
+0.585 UP
+4812 1649 Circle
+0.585 UP
+4837 1646 Circle
+0.585 UP
+4863 1643 Circle
+0.585 UP
+4888 1642 Circle
+0.585 UP
+4913 1641 Circle
+0.585 UP
+4938 1640 Circle
+0.585 UP
+4955 1640 Circle
+0.585 UP
+4971 1640 Circle
+0.582 UP
+4988 1638 Circle
+0.579 UP
+5005 1635 Circle
+0.573 UP
+5021 1631 Circle
+0.570 UP
+5038 1627 Circle
+0.564 UP
+5054 1622 Circle
+0.558 UP
+5071 1616 Circle
+0.552 UP
+5088 1611 Circle
+0.546 UP
+5104 1605 Circle
+0.540 UP
+5121 1600 Circle
+0.534 UP
+5138 1594 Circle
+0.528 UP
+5154 1590 Circle
+0.522 UP
+5171 1585 Circle
+0.519 UP
+5188 1582 Circle
+0.513 UP
+5204 1579 Circle
+0.510 UP
+5221 1577 Circle
+0.507 UP
+5237 1576 Circle
+0.507 UP
+5254 1576 Circle
+0.504 UP
+5271 1577 Circle
+0.504 UP
+5287 1579 Circle
+0.504 UP
+5304 1582 Circle
+0.507 UP
+5321 1586 Circle
+0.507 UP
+5337 1591 Circle
+0.510 UP
+5354 1597 Circle
+0.516 UP
+5370 1604 Circle
+0.519 UP
+5387 1612 Circle
+0.525 UP
+5404 1620 Circle
+0.531 UP
+5420 1629 Circle
+0.537 UP
+5437 1639 Circle
+0.543 UP
+5454 1648 Circle
+0.549 UP
+5470 1657 Circle
+0.558 UP
+5487 1667 Circle
+0.564 UP
+5504 1675 Circle
+0.573 UP
+5520 1683 Circle
+0.579 UP
+5537 1689 Circle
+0.585 UP
+5553 1694 Circle
+0.591 UP
+5570 1697 Circle
+0.594 UP
+5587 1698 Circle
+0.594 UP
+5603 1696 Circle
+0.594 UP
+5636 1696 Circle
+0.597 UP
+5669 1705 Circle
+0.597 UP
+5701 1714 Circle
+0.600 UP
+5734 1724 Circle
+0.603 UP
+5767 1734 Circle
+0.603 UP
+5799 1744 Circle
+0.606 UP
+5832 1755 Circle
+0.609 UP
+5865 1767 Circle
+0.612 UP
+5897 1778 Circle
+0.615 UP
+5930 1790 Circle
+0.618 UP
+5963 1803 Circle
+0.621 UP
+5995 1815 Circle
+0.624 UP
+6028 1827 Circle
+0.627 UP
+6061 1840 Circle
+0.630 UP
+6093 1852 Circle
+0.633 UP
+6126 1865 Circle
+0.639 UP
+6159 1877 Circle
+0.642 UP
+6191 1889 Circle
+0.645 UP
+6224 1901 Circle
+0.648 UP
+6257 1912 Circle
+0.648 UP
+6289 1923 Circle
+0.651 UP
+6322 1933 Circle
+0.654 UP
+6355 1943 Circle
+0.654 UP
+6387 1952 Circle
+0.654 UP
+6420 1960 Circle
+0.654 UP
+6453 1968 Circle
+0.654 UP
+6485 1975 Circle
+0.654 UP
+6518 1982 Circle
+0.654 UP
+6551 1987 Circle
+0.651 UP
+6583 1993 Circle
+0.651 UP
+6616 1997 Circle
+0.651 UP
+6649 2001 Circle
+0.648 UP
+6681 2004 Circle
+0.648 UP
+6714 2007 Circle
+0.645 UP
+6747 2009 Circle
+0.645 UP
+6779 2011 Circle
+0.642 UP
+6812 2012 Circle
+0.642 UP
+6845 2013 Circle
+0.642 UP
+6877 2014 Circle
+0.642 UP
+6910 2014 Circle
+0.618 UP
+2731 2210 Circle
+0.618 UP
+2762 2210 Circle
+0.618 UP
+2793 2211 Circle
+0.618 UP
+2823 2212 Circle
+0.618 UP
+2854 2213 Circle
+0.618 UP
+2885 2215 Circle
+0.615 UP
+2916 2217 Circle
+0.615 UP
+2947 2219 Circle
+0.615 UP
+2977 2222 Circle
+0.615 UP
+3008 2225 Circle
+0.615 UP
+3039 2228 Circle
+0.615 UP
+3070 2232 Circle
+0.615 UP
+3101 2236 Circle
+0.615 UP
+3131 2240 Circle
+0.615 UP
+3162 2245 Circle
+0.615 UP
+3193 2250 Circle
+0.615 UP
+3224 2255 Circle
+0.615 UP
+3255 2261 Circle
+0.615 UP
+3285 2267 Circle
+0.615 UP
+3316 2273 Circle
+0.612 UP
+3347 2279 Circle
+0.612 UP
+3378 2286 Circle
+0.612 UP
+3409 2292 Circle
+0.612 UP
+3439 2299 Circle
+0.609 UP
+3470 2306 Circle
+0.609 UP
+3501 2313 Circle
+0.606 UP
+3532 2320 Circle
+0.603 UP
+3563 2326 Circle
+0.600 UP
+3593 2333 Circle
+0.597 UP
+3624 2339 Circle
+0.588 UP
+3655 2345 Circle
+0.579 UP
+3686 2350 Circle
+0.567 UP
+3717 2355 Circle
+0.549 UP
+3747 2359 Circle
+0.528 UP
+3778 2361 Circle
+0.501 UP
+3809 2362 Circle
+0.477 UP
+3840 2361 Circle
+0.453 UP
+3871 2359 Circle
+0.453 UP
+3901 2357 Circle
+0.453 UP
+3932 2356 Circle
+0.453 UP
+3957 2356 Circle
+0.453 UP
+3982 2355 Circle
+0.450 UP
+4008 2352 Circle
+0.447 UP
+4033 2348 Circle
+0.444 UP
+4058 2341 Circle
+0.441 UP
+4083 2334 Circle
+0.435 UP
+4108 2325 Circle
+0.429 UP
+4133 2315 Circle
+0.423 UP
+4158 2304 Circle
+0.417 UP
+4184 2293 Circle
+0.411 UP
+4209 2281 Circle
+0.408 UP
+4234 2268 Circle
+0.402 UP
+4259 2256 Circle
+0.396 UP
+4284 2243 Circle
+0.390 UP
+4309 2231 Circle
+0.384 UP
+4334 2219 Circle
+0.378 UP
+4360 2207 Circle
+0.372 UP
+4385 2195 Circle
+0.366 UP
+4410 2184 Circle
+0.360 UP
+4435 2173 Circle
+0.357 UP
+4460 2163 Circle
+0.351 UP
+4485 2153 Circle
+0.345 UP
+4511 2144 Circle
+0.339 UP
+4536 2136 Circle
+0.336 UP
+4561 2129 Circle
+0.330 UP
+4586 2122 Circle
+0.324 UP
+4611 2115 Circle
+0.318 UP
+4636 2110 Circle
+0.315 UP
+4661 2106 Circle
+0.309 UP
+4687 2102 Circle
+0.303 UP
+4712 2099 Circle
+0.300 UP
+4737 2097 Circle
+0.294 UP
+4762 2096 Circle
+0.291 UP
+4787 2096 Circle
+0.285 UP
+4812 2096 Circle
+0.279 UP
+4837 2098 Circle
+0.276 UP
+4863 2101 Circle
+0.270 UP
+4888 2104 Circle
+0.267 UP
+4913 2109 Circle
+0.261 UP
+4938 2115 Circle
+0.261 UP
+4955 2115 Circle
+0.264 UP
+4971 2114 Circle
+0.267 UP
+4988 2116 Circle
+0.270 UP
+5005 2121 Circle
+0.276 UP
+5021 2128 Circle
+0.282 UP
+5038 2137 Circle
+0.288 UP
+5054 2148 Circle
+0.294 UP
+5071 2161 Circle
+0.303 UP
+5088 2175 Circle
+0.309 UP
+5104 2191 Circle
+0.315 UP
+5121 2209 Circle
+0.321 UP
+5138 2228 Circle
+0.327 UP
+5154 2248 Circle
+0.333 UP
+5171 2269 Circle
+0.339 UP
+5188 2292 Circle
+0.342 UP
+5204 2315 Circle
+0.348 UP
+5221 2339 Circle
+0.351 UP
+5237 2364 Circle
+0.354 UP
+5254 2389 Circle
+0.357 UP
+5271 2415 Circle
+0.357 UP
+5287 2442 Circle
+0.360 UP
+5304 2469 Circle
+0.360 UP
+5321 2497 Circle
+0.360 UP
+5337 2525 Circle
+0.294 UP
+5354 2518 Circle
+0.321 UP
+5370 2489 Circle
+0.336 UP
+5387 2458 Circle
+0.339 UP
+5404 2427 Circle
+0.339 UP
+5420 2396 Circle
+0.336 UP
+5437 2366 Circle
+0.333 UP
+5454 2337 Circle
+0.327 UP
+5470 2310 Circle
+0.321 UP
+5487 2285 Circle
+0.315 UP
+5504 2261 Circle
+0.309 UP
+5520 2240 Circle
+0.300 UP
+5537 2221 Circle
+0.294 UP
+5553 2206 Circle
+0.288 UP
+5570 2193 Circle
+0.285 UP
+5587 2184 Circle
+0.282 UP
+5603 2179 Circle
+0.282 UP
+5636 2179 Circle
+0.285 UP
+5669 2189 Circle
+0.291 UP
+5701 2200 Circle
+0.297 UP
+5734 2211 Circle
+0.300 UP
+5767 2222 Circle
+0.306 UP
+5799 2235 Circle
+0.315 UP
+5832 2247 Circle
+0.321 UP
+5865 2260 Circle
+0.330 UP
+5897 2273 Circle
+0.339 UP
+5930 2287 Circle
+0.351 UP
+5963 2300 Circle
+0.363 UP
+5995 2314 Circle
+0.378 UP
+6028 2327 Circle
+0.393 UP
+6061 2340 Circle
+0.411 UP
+6093 2353 Circle
+0.429 UP
+6126 2364 Circle
+0.450 UP
+6159 2375 Circle
+0.471 UP
+6191 2385 Circle
+0.492 UP
+6224 2394 Circle
+0.516 UP
+6257 2401 Circle
+0.537 UP
+6289 2406 Circle
+0.558 UP
+6322 2411 Circle
+0.576 UP
+6355 2413 Circle
+0.594 UP
+6387 2414 Circle
+0.606 UP
+6420 2414 Circle
+0.618 UP
+6453 2413 Circle
+0.624 UP
+6485 2411 Circle
+0.627 UP
+6518 2408 Circle
+0.630 UP
+6551 2405 Circle
+0.450 UP
+6583 2400 Circle
+0.450 UP
+6616 2391 Circle
+0.450 UP
+6649 2384 Circle
+0.450 UP
+6681 2377 Circle
+0.453 UP
+6714 2372 Circle
+0.453 UP
+6747 2367 Circle
+0.453 UP
+6779 2363 Circle
+0.453 UP
+6812 2360 Circle
+0.453 UP
+6845 2358 Circle
+0.453 UP
+6877 2356 Circle
+0.453 UP
+6910 2356 Circle
+0.285 UP
+2731 2462 Circle
+0.285 UP
+2762 2462 Circle
+0.288 UP
+2793 2463 Circle
+0.288 UP
+2823 2464 Circle
+0.291 UP
+2854 2465 Circle
+0.294 UP
+2885 2466 Circle
+0.297 UP
+2916 2468 Circle
+0.303 UP
+2947 2470 Circle
+0.306 UP
+2977 2472 Circle
+0.315 UP
+3008 2474 Circle
+0.321 UP
+3039 2476 Circle
+0.327 UP
+3070 2479 Circle
+0.336 UP
+3101 2481 Circle
+0.345 UP
+3131 2483 Circle
+0.357 UP
+3162 2484 Circle
+0.366 UP
+3193 2485 Circle
+0.378 UP
+3224 2486 Circle
+0.390 UP
+3255 2485 Circle
+0.399 UP
+3285 2484 Circle
+0.411 UP
+3316 2482 Circle
+0.423 UP
+3347 2479 Circle
+0.432 UP
+3378 2475 Circle
+0.438 UP
+3409 2470 Circle
+0.447 UP
+3439 2464 Circle
+0.453 UP
+3470 2457 Circle
+0.456 UP
+3501 2449 Circle
+0.459 UP
+3532 2441 Circle
+0.462 UP
+3563 2432 Circle
+0.462 UP
+3593 2423 Circle
+0.462 UP
+3624 2414 Circle
+0.462 UP
+3655 2405 Circle
+0.462 UP
+3686 2396 Circle
+0.459 UP
+3717 2388 Circle
+0.459 UP
+3747 2380 Circle
+0.456 UP
+3778 2373 Circle
+0.456 UP
+3809 2367 Circle
+0.453 UP
+3840 2362 Circle
+0.453 UP
+3871 2359 Circle
+0.453 UP
+3901 2357 Circle
+0.453 UP
+3932 2356 Circle
+0.453 UP
+3957 2356 Circle
+0.453 UP
+3982 2358 Circle
+0.456 UP
+4008 2364 Circle
+0.459 UP
+4033 2374 Circle
+0.465 UP
+4058 2387 Circle
+0.468 UP
+4083 2403 Circle
+0.474 UP
+4108 2422 Circle
+0.480 UP
+4133 2442 Circle
+0.483 UP
+4158 2464 Circle
+0.486 UP
+4184 2487 Circle
+0.489 UP
+4209 2511 Circle
+0.492 UP
+4234 2536 Circle
+0.495 UP
+4259 2563 Circle
+0.594 UP
+4284 2577 Circle
+0.504 UP
+4309 2562 Circle
+0.432 UP
+4334 2543 Circle
+0.378 UP
+4360 2520 Circle
+0.339 UP
+4385 2496 Circle
+0.309 UP
+4410 2471 Circle
+0.288 UP
+4435 2446 Circle
+0.270 UP
+4460 2421 Circle
+0.258 UP
+4485 2396 Circle
+0.249 UP
+4511 2372 Circle
+0.240 UP
+4536 2349 Circle
+0.237 UP
+4561 2327 Circle
+0.234 UP
+4586 2305 Circle
+0.231 UP
+4611 2284 Circle
+0.231 UP
+4636 2265 Circle
+0.231 UP
+4661 2246 Circle
+0.231 UP
+4687 2229 Circle
+0.231 UP
+4712 2213 Circle
+0.234 UP
+4737 2197 Circle
+0.237 UP
+4762 2183 Circle
+0.240 UP
+4787 2170 Circle
+0.243 UP
+4812 2158 Circle
+0.246 UP
+4837 2147 Circle
+0.249 UP
+4863 2138 Circle
+0.255 UP
+4888 2129 Circle
+0.258 UP
+4913 2121 Circle
+0.261 UP
+4938 2115 Circle
+0.261 UP
+4955 2115 Circle
+0.261 UP
+4971 2117 Circle
+0.261 UP
+4988 2122 Circle
+0.264 UP
+5005 2130 Circle
+0.267 UP
+5021 2139 Circle
+0.270 UP
+5038 2151 Circle
+0.276 UP
+5054 2164 Circle
+0.279 UP
+5071 2180 Circle
+0.285 UP
+5088 2196 Circle
+0.288 UP
+5104 2215 Circle
+0.291 UP
+5121 2234 Circle
+0.297 UP
+5138 2255 Circle
+0.300 UP
+5154 2277 Circle
+0.303 UP
+5171 2299 Circle
+0.306 UP
+5188 2323 Circle
+0.309 UP
+5204 2348 Circle
+0.309 UP
+5221 2373 Circle
+0.309 UP
+5237 2399 Circle
+0.309 UP
+5254 2426 Circle
+0.306 UP
+5271 2453 Circle
+0.300 UP
+5287 2480 Circle
+0.285 UP
+5304 2506 Circle
+0.258 UP
+5321 2528 Circle
+0.246 UP
+5337 2536 Circle
+0.360 UP
+5354 2553 Circle
+0.357 UP
+5370 2581 Circle
+0.351 UP
+5387 2609 Circle
+0.339 UP
+5404 2637 Circle
+0.321 UP
+5420 2664 Circle
+0.291 UP
+5437 2686 Circle
+0.261 UP
+5454 2699 Circle
+0.267 UP
+5470 2697 Circle
+0.288 UP
+5487 2686 Circle
+0.303 UP
+5504 2670 Circle
+0.312 UP
+5520 2652 Circle
+0.321 UP
+5537 2635 Circle
+0.324 UP
+5553 2617 Circle
+0.327 UP
+5570 2599 Circle
+0.330 UP
+5587 2581 Circle
+0.330 UP
+5603 2564 Circle
+0.330 UP
+5636 2564 Circle
+0.324 UP
+5669 2616 Circle
+0.315 UP
+5701 2668 Circle
+0.297 UP
+5734 2720 Circle
+0.267 UP
+5767 2771 Circle
+0.207 UP
+5799 2816 Circle
+0.456 UP
+5832 2824 Circle
+0.453 UP
+5865 2797 Circle
+0.453 UP
+5897 2770 Circle
+0.450 UP
+5930 2745 Circle
+0.450 UP
+5963 2720 Circle
+0.447 UP
+5995 2695 Circle
+0.447 UP
+6028 2672 Circle
+0.447 UP
+6061 2649 Circle
+0.447 UP
+6093 2627 Circle
+0.447 UP
+6126 2606 Circle
+0.447 UP
+6159 2586 Circle
+0.447 UP
+6191 2567 Circle
+0.447 UP
+6224 2548 Circle
+0.447 UP
+6257 2530 Circle
+0.447 UP
+6289 2513 Circle
+0.447 UP
+6322 2497 Circle
+0.447 UP
+6355 2482 Circle
+0.450 UP
+6387 2468 Circle
+0.450 UP
+6420 2454 Circle
+0.450 UP
+6453 2442 Circle
+0.450 UP
+6485 2430 Circle
+0.450 UP
+6518 2419 Circle
+0.450 UP
+6551 2409 Circle
+0.630 UP
+6583 2402 Circle
+0.624 UP
+6616 2398 Circle
+0.615 UP
+6649 2395 Circle
+0.603 UP
+6681 2391 Circle
+0.462 UP
+6714 2383 Circle
+0.459 UP
+6747 2376 Circle
+0.459 UP
+6779 2369 Circle
+0.456 UP
+6812 2363 Circle
+0.453 UP
+6845 2359 Circle
+0.453 UP
+6877 2357 Circle
+0.453 UP
+6910 2356 Circle
+0.285 UP
+2731 2462 Circle
+0.285 UP
+2762 2462 Circle
+0.288 UP
+2793 2463 Circle
+0.288 UP
+2823 2464 Circle
+0.291 UP
+2854 2465 Circle
+0.294 UP
+2885 2466 Circle
+0.297 UP
+2916 2468 Circle
+0.303 UP
+2947 2470 Circle
+0.306 UP
+2977 2472 Circle
+0.315 UP
+3008 2474 Circle
+0.321 UP
+3039 2476 Circle
+0.327 UP
+3070 2479 Circle
+0.336 UP
+3101 2481 Circle
+0.345 UP
+3131 2483 Circle
+0.357 UP
+3162 2484 Circle
+0.366 UP
+3193 2485 Circle
+0.378 UP
+3224 2486 Circle
+0.390 UP
+3255 2485 Circle
+0.399 UP
+3285 2484 Circle
+0.411 UP
+3316 2482 Circle
+0.423 UP
+3347 2479 Circle
+0.432 UP
+3378 2475 Circle
+0.438 UP
+3409 2470 Circle
+0.447 UP
+3439 2464 Circle
+0.453 UP
+3470 2457 Circle
+0.456 UP
+3501 2449 Circle
+0.459 UP
+3532 2441 Circle
+0.462 UP
+3563 2432 Circle
+0.462 UP
+3593 2423 Circle
+0.462 UP
+3624 2414 Circle
+0.462 UP
+3655 2405 Circle
+0.462 UP
+3686 2396 Circle
+0.459 UP
+3717 2388 Circle
+0.459 UP
+3747 2380 Circle
+0.456 UP
+3778 2373 Circle
+0.456 UP
+3809 2367 Circle
+0.453 UP
+3840 2362 Circle
+0.459 UP
+3871 2359 Circle
+0.453 UP
+3901 2357 Circle
+0.453 UP
+3932 2356 Circle
+0.453 UP
+3957 2356 Circle
+0.453 UP
+3982 2358 Circle
+0.456 UP
+4008 2364 Circle
+0.459 UP
+4033 2374 Circle
+0.465 UP
+4058 2387 Circle
+0.468 UP
+4083 2403 Circle
+0.474 UP
+4108 2422 Circle
+0.480 UP
+4133 2442 Circle
+0.483 UP
+4158 2464 Circle
+0.486 UP
+4184 2487 Circle
+0.489 UP
+4209 2511 Circle
+0.492 UP
+4234 2536 Circle
+0.495 UP
+4259 2563 Circle
+0.495 UP
+4284 2589 Circle
+0.498 UP
+4309 2617 Circle
+0.498 UP
+4334 2645 Circle
+0.501 UP
+4360 2673 Circle
+0.501 UP
+4385 2702 Circle
+0.501 UP
+4410 2731 Circle
+0.501 UP
+4435 2760 Circle
+0.501 UP
+4460 2790 Circle
+0.501 UP
+4485 2820 Circle
+0.501 UP
+4511 2850 Circle
+0.501 UP
+4536 2881 Circle
+0.498 UP
+4561 2911 Circle
+0.498 UP
+4586 2942 Circle
+0.498 UP
+4611 2973 Circle
+0.498 UP
+4636 3005 Circle
+0.498 UP
+4661 3036 Circle
+0.501 UP
+4687 3068 Circle
+0.501 UP
+4712 3099 Circle
+0.504 UP
+4737 3131 Circle
+0.510 UP
+4762 3163 Circle
+0.516 UP
+4787 3195 Circle
+0.528 UP
+4812 3226 Circle
+0.549 UP
+4837 3257 Circle
+0.576 UP
+4863 3287 Circle
+0.624 UP
+4888 3313 Circle
+0.684 UP
+4913 3334 Circle
+0.720 UP
+4938 3343 Circle
+0.720 UP
+4955 3343 Circle
+0.714 UP
+4971 3340 Circle
+0.687 UP
+4988 3331 Circle
+0.639 UP
+5005 3314 Circle
+0.588 UP
+5021 3289 Circle
+0.546 UP
+5038 3259 Circle
+0.513 UP
+5054 3225 Circle
+0.489 UP
+5071 3189 Circle
+0.474 UP
+5088 3151 Circle
+0.462 UP
+5104 3113 Circle
+0.453 UP
+5121 3073 Circle
+0.447 UP
+5138 3033 Circle
+0.441 UP
+5154 2994 Circle
+0.438 UP
+5171 2954 Circle
+0.435 UP
+5188 2914 Circle
+0.435 UP
+5204 2874 Circle
+0.435 UP
+5221 2835 Circle
+0.435 UP
+5237 2797 Circle
+0.435 UP
+5254 2758 Circle
+0.438 UP
+5271 2721 Circle
+0.444 UP
+5287 2685 Circle
+0.459 UP
+5304 2650 Circle
+0.486 UP
+5321 2621 Circle
+0.498 UP
+5337 2608 Circle
+0.450 UP
+5354 2621 Circle
+0.417 UP
+5370 2647 Circle
+0.405 UP
+5387 2676 Circle
+0.396 UP
+5404 2707 Circle
+0.396 UP
+5420 2739 Circle
+0.396 UP
+5437 2772 Circle
+0.513 UP
+5454 2785 Circle
+0.507 UP
+5470 2796 Circle
+0.489 UP
+5487 2818 Circle
+0.474 UP
+5504 2845 Circle
+0.465 UP
+5520 2874 Circle
+0.462 UP
+5537 2903 Circle
+0.462 UP
+5553 2932 Circle
+0.465 UP
+5570 2960 Circle
+0.471 UP
+5587 2985 Circle
+0.477 UP
+5603 3001 Circle
+0.477 UP
+5636 3001 Circle
+0.471 UP
+5669 2970 Circle
+0.468 UP
+5701 2940 Circle
+0.462 UP
+5734 2910 Circle
+0.459 UP
+5767 2881 Circle
+0.456 UP
+5799 2852 Circle
+0.183 UP
+5832 2840 Circle
+0.261 UP
+5865 2833 Circle
+0.318 UP
+5897 2813 Circle
+0.351 UP
+5930 2789 Circle
+0.372 UP
+5963 2765 Circle
+0.387 UP
+5995 2741 Circle
+0.399 UP
+6028 2717 Circle
+0.408 UP
+6061 2694 Circle
+0.417 UP
+6093 2671 Circle
+0.423 UP
+6126 2650 Circle
+0.429 UP
+6159 2629 Circle
+0.435 UP
+6191 2608 Circle
+0.441 UP
+6224 2589 Circle
+0.444 UP
+6257 2570 Circle
+0.447 UP
+6289 2552 Circle
+0.450 UP
+6322 2535 Circle
+0.453 UP
+6355 2518 Circle
+0.456 UP
+6387 2503 Circle
+0.459 UP
+6420 2487 Circle
+0.462 UP
+6453 2473 Circle
+0.462 UP
+6485 2459 Circle
+0.465 UP
+6518 2447 Circle
+0.465 UP
+6551 2434 Circle
+0.465 UP
+6583 2423 Circle
+0.465 UP
+6616 2412 Circle
+0.465 UP
+6649 2402 Circle
+0.465 UP
+6681 2392 Circle
+0.585 UP
+6714 2387 Circle
+0.558 UP
+6747 2382 Circle
+0.525 UP
+6779 2377 Circle
+0.492 UP
+6812 2371 Circle
+0.465 UP
+6845 2364 Circle
+0.453 UP
+6877 2358 Circle
+0.453 UP
+6910 2356 Circle
+0.180 UP
+2731 3044 Circle
+0.180 UP
+2762 3044 Circle
+0.183 UP
+2793 3045 Circle
+0.186 UP
+2823 3046 Circle
+0.189 UP
+2854 3048 Circle
+0.195 UP
+2885 3050 Circle
+0.204 UP
+2916 3053 Circle
+0.216 UP
+2947 3056 Circle
+0.231 UP
+2977 3058 Circle
+0.252 UP
+3008 3061 Circle
+0.282 UP
+3039 3062 Circle
+0.327 UP
+3070 3063 Circle
+0.387 UP
+3101 3061 Circle
+0.462 UP
+3131 3055 Circle
+0.546 UP
+3162 3044 Circle
+0.624 UP
+3193 3029 Circle
+0.684 UP
+3224 3008 Circle
+0.726 UP
+3255 2985 Circle
+0.756 UP
+3285 2959 Circle
+0.777 UP
+3316 2931 Circle
+0.795 UP
+3347 2902 Circle
+0.807 UP
+3378 2873 Circle
+0.816 UP
+3409 2843 Circle
+0.828 UP
+3439 2812 Circle
+0.834 UP
+3470 2782 Circle
+0.843 UP
+3501 2751 Circle
+0.852 UP
+3532 2720 Circle
+0.861 UP
+3563 2689 Circle
+0.873 UP
+3593 2658 Circle
+0.882 UP
+3624 2628 Circle
+0.894 UP
+3655 2598 Circle
+0.909 UP
+3686 2569 Circle
+0.930 UP
+3717 2540 Circle
+0.951 UP
+3747 2514 Circle
+0.981 UP
+3778 2490 Circle
+1.011 UP
+3809 2469 Circle
+1.044 UP
+3840 2453 Circle
+1.065 UP
+3871 2442 Circle
+1.074 UP
+3901 2435 Circle
+1.077 UP
+3932 2433 Circle
+1.077 UP
+3957 2433 Circle
+1.074 UP
+3982 2436 Circle
+1.068 UP
+4008 2444 Circle
+1.059 UP
+4033 2456 Circle
+1.047 UP
+4058 2472 Circle
+1.035 UP
+4083 2491 Circle
+1.020 UP
+4108 2511 Circle
+1.002 UP
+4133 2531 Circle
+0.978 UP
+4158 2551 Circle
+0.942 UP
+4184 2568 Circle
+0.882 UP
+4209 2581 Circle
+0.801 UP
+4234 2587 Circle
+0.699 UP
+4259 2586 Circle
+0.495 UP
+4284 2589 Circle
+0.498 UP
+4309 2617 Circle
+0.498 UP
+4334 2645 Circle
+0.501 UP
+4360 2673 Circle
+0.501 UP
+4385 2702 Circle
+0.501 UP
+4410 2731 Circle
+0.501 UP
+4435 2760 Circle
+0.501 UP
+4460 2790 Circle
+0.501 UP
+4485 2820 Circle
+0.501 UP
+4511 2850 Circle
+0.501 UP
+4536 2881 Circle
+0.498 UP
+4561 2911 Circle
+0.498 UP
+4586 2942 Circle
+0.498 UP
+4611 2973 Circle
+0.498 UP
+4636 3005 Circle
+0.498 UP
+4661 3036 Circle
+0.501 UP
+4687 3068 Circle
+0.501 UP
+4712 3099 Circle
+0.504 UP
+4737 3131 Circle
+0.510 UP
+4762 3163 Circle
+0.516 UP
+4787 3195 Circle
+0.528 UP
+4812 3226 Circle
+0.549 UP
+4837 3257 Circle
+0.576 UP
+4863 3287 Circle
+0.624 UP
+4888 3313 Circle
+0.684 UP
+4913 3334 Circle
+0.720 UP
+4938 3343 Circle
+0.720 UP
+4955 3343 Circle
+0.717 UP
+4971 3341 Circle
+0.708 UP
+4988 3335 Circle
+0.702 UP
+5005 3327 Circle
+0.693 UP
+5021 3318 Circle
+0.681 UP
+5038 3306 Circle
+0.666 UP
+5054 3292 Circle
+0.645 UP
+5071 3277 Circle
+0.618 UP
+5088 3259 Circle
+0.588 UP
+5104 3240 Circle
+0.555 UP
+5121 3219 Circle
+0.528 UP
+5138 3197 Circle
+0.504 UP
+5154 3174 Circle
+0.486 UP
+5171 3150 Circle
+0.468 UP
+5188 3125 Circle
+0.453 UP
+5204 3101 Circle
+0.444 UP
+5221 3076 Circle
+0.435 UP
+5237 3051 Circle
+0.426 UP
+5254 3027 Circle
+0.420 UP
+5271 3002 Circle
+0.417 UP
+5287 2978 Circle
+0.414 UP
+5304 2954 Circle
+0.411 UP
+5321 2930 Circle
+0.411 UP
+5337 2907 Circle
+0.411 UP
+5354 2884 Circle
+0.414 UP
+5370 2862 Circle
+0.420 UP
+5387 2840 Circle
+0.432 UP
+5404 2820 Circle
+0.450 UP
+5420 2802 Circle
+0.480 UP
+5437 2788 Circle
+0.396 UP
+5454 2805 Circle
+0.399 UP
+5470 2839 Circle
+0.405 UP
+5487 2873 Circle
+0.411 UP
+5504 2907 Circle
+0.420 UP
+5520 2941 Circle
+0.435 UP
+5537 2976 Circle
+0.459 UP
+5553 3011 Circle
+0.504 UP
+5570 3044 Circle
+0.417 UP
+5587 3068 Circle
+0.408 UP
+5603 3073 Circle
+0.408 UP
+5636 3073 Circle
+0.423 UP
+5669 3041 Circle
+0.444 UP
+5701 3010 Circle
+0.471 UP
+5734 2980 Circle
+0.513 UP
+5767 2954 Circle
+0.579 UP
+5799 2935 Circle
+0.612 UP
+5832 2938 Circle
+0.642 UP
+5865 2930 Circle
+0.633 UP
+5897 2910 Circle
+0.624 UP
+5930 2890 Circle
+0.615 UP
+5963 2871 Circle
+0.603 UP
+5995 2853 Circle
+0.591 UP
+6028 2837 Circle
+0.579 UP
+6061 2822 Circle
+0.564 UP
+6093 2808 Circle
+0.552 UP
+6126 2797 Circle
+0.537 UP
+6159 2786 Circle
+0.522 UP
+6191 2778 Circle
+0.510 UP
+6224 2772 Circle
+0.501 UP
+6257 2767 Circle
+0.495 UP
+6289 2764 Circle
+0.495 UP
+6322 2762 Circle
+0.507 UP
+6355 2760 Circle
+0.525 UP
+6387 2759 Circle
+0.558 UP
+6420 2756 Circle
+0.603 UP
+6453 2750 Circle
+0.654 UP
+6485 2740 Circle
+0.711 UP
+6518 2725 Circle
+0.762 UP
+6551 2704 Circle
+0.804 UP
+6583 2678 Circle
+0.834 UP
+6616 2648 Circle
+0.861 UP
+6649 2615 Circle
+0.885 UP
+6681 2581 Circle
+0.912 UP
+6714 2547 Circle
+0.945 UP
+6747 2515 Circle
+0.984 UP
+6779 2486 Circle
+1.026 UP
+6812 2463 Circle
+1.059 UP
+6845 2446 Circle
+1.074 UP
+6877 2436 Circle
+1.077 UP
+6910 2433 Circle
+0.000 UP
+2731 3418 Circle
+0.033 UP
+2762 3407 Circle
+0.075 UP
+2793 3382 Circle
+0.099 UP
+2823 3353 Circle
+0.111 UP
+2854 3322 Circle
+0.120 UP
+2885 3292 Circle
+0.123 UP
+2916 3262 Circle
+0.126 UP
+2947 3232 Circle
+0.126 UP
+2977 3204 Circle
+0.123 UP
+3008 3176 Circle
+0.120 UP
+3039 3150 Circle
+0.117 UP
+3070 3124 Circle
+0.111 UP
+3101 3100 Circle
+0.105 UP
+3131 3078 Circle
+0.096 UP
+3162 3057 Circle
+0.087 UP
+3193 3038 Circle
+0.081 UP
+3224 3020 Circle
+0.072 UP
+3255 3005 Circle
+0.063 UP
+3285 2991 Circle
+0.051 UP
+3316 2980 Circle
+0.045 UP
+3347 2971 Circle
+0.036 UP
+3378 2964 Circle
+0.030 UP
+3409 2960 Circle
+0.024 UP
+3439 2957 Circle
+0.018 UP
+3470 2957 Circle
+0.015 UP
+3501 2958 Circle
+0.012 UP
+3532 2962 Circle
+0.009 UP
+3563 2967 Circle
+0.006 UP
+3593 2973 Circle
+0.006 UP
+3624 2980 Circle
+0.006 UP
+3655 2988 Circle
+0.003 UP
+3686 2997 Circle
+0.003 UP
+3717 3006 Circle
+0.003 UP
+3747 3014 Circle
+0.003 UP
+3778 3023 Circle
+0.003 UP
+3809 3030 Circle
+0.000 UP
+3840 3036 Circle
+0.000 UP
+3871 3041 Circle
+0.000 UP
+3901 3044 Circle
+0.000 UP
+3932 3045 Circle
+0.000 UP
+3957 3045 Circle
+0.000 UP
+3982 3042 Circle
+0.000 UP
+4008 3033 Circle
+0.003 UP
+4033 3019 Circle
+0.006 UP
+4058 3000 Circle
+0.009 UP
+4083 2979 Circle
+0.012 UP
+4108 2956 Circle
+0.024 UP
+4133 2933 Circle
+0.042 UP
+4158 2911 Circle
+0.072 UP
+4184 2892 Circle
+0.126 UP
+4209 2879 Circle
+0.207 UP
+4234 2872 Circle
+0.306 UP
+4259 2874 Circle
+0.408 UP
+4284 2885 Circle
+0.498 UP
+4309 2903 Circle
+0.567 UP
+4334 2926 Circle
+0.624 UP
+4360 2953 Circle
+0.663 UP
+4385 2983 Circle
+0.696 UP
+4410 3016 Circle
+0.720 UP
+4435 3049 Circle
+0.741 UP
+4460 3084 Circle
+0.756 UP
+4485 3119 Circle
+0.768 UP
+4511 3155 Circle
+0.780 UP
+4536 3191 Circle
+0.789 UP
+4561 3227 Circle
+0.795 UP
+4586 3263 Circle
+0.801 UP
+4611 3299 Circle
+0.807 UP
+4636 3336 Circle
+0.810 UP
+4661 3371 Circle
+0.000 UP
+4687 3397 Circle
+0.000 UP
+4712 3421 Circle
+0.000 UP
+4737 3447 Circle
+0.000 UP
+4762 3473 Circle
+0.000 UP
+4787 3500 Circle
+0.000 UP
+4812 3528 Circle
+0.000 UP
+4837 3556 Circle
+0.171 UP
+4863 3530 Circle
+0.129 UP
+4888 3503 Circle
+0.069 UP
+4913 3481 Circle
+0.033 UP
+4938 3473 Circle
+0.033 UP
+4955 3473 Circle
+0.039 UP
+4971 3470 Circle
+0.057 UP
+4988 3461 Circle
+0.072 UP
+5005 3448 Circle
+0.090 UP
+5021 3432 Circle
+0.108 UP
+5038 3415 Circle
+0.129 UP
+5054 3398 Circle
+0.153 UP
+5071 3381 Circle
+0.186 UP
+5088 3366 Circle
+0.219 UP
+5104 3351 Circle
+0.252 UP
+5121 3338 Circle
+0.282 UP
+5138 3326 Circle
+0.309 UP
+5154 3315 Circle
+0.333 UP
+5171 3304 Circle
+0.354 UP
+5188 3294 Circle
+0.369 UP
+5204 3284 Circle
+0.384 UP
+5221 3274 Circle
+0.396 UP
+5237 3264 Circle
+0.405 UP
+5254 3255 Circle
+0.414 UP
+5271 3245 Circle
+0.420 UP
+5287 3236 Circle
+0.426 UP
+5304 3226 Circle
+0.432 UP
+5321 3217 Circle
+0.435 UP
+5337 3207 Circle
+0.441 UP
+5354 3197 Circle
+0.441 UP
+5370 3188 Circle
+0.444 UP
+5387 3178 Circle
+0.447 UP
+5404 3168 Circle
+0.447 UP
+5420 3157 Circle
+0.450 UP
+5437 3147 Circle
+0.450 UP
+5454 3137 Circle
+0.447 UP
+5470 3127 Circle
+0.447 UP
+5487 3117 Circle
+0.447 UP
+5504 3106 Circle
+0.444 UP
+5520 3097 Circle
+0.441 UP
+5537 3087 Circle
+0.435 UP
+5553 3078 Circle
+0.429 UP
+5570 3071 Circle
+0.588 UP
+5587 3075 Circle
+0.690 UP
+5603 3095 Circle
+0.690 UP
+5636 3095 Circle
+0.684 UP
+5669 3070 Circle
+0.678 UP
+5701 3045 Circle
+0.672 UP
+5734 3021 Circle
+0.666 UP
+5767 2997 Circle
+0.657 UP
+5799 2974 Circle
+0.651 UP
+5832 2952 Circle
+0.540 UP
+5865 2973 Circle
+0.033 UP
+5897 2958 Circle
+0.033 UP
+5930 2939 Circle
+0.030 UP
+5963 2922 Circle
+0.027 UP
+5995 2905 Circle
+0.024 UP
+6028 2891 Circle
+0.024 UP
+6061 2877 Circle
+0.021 UP
+6093 2865 Circle
+0.018 UP
+6126 2855 Circle
+0.015 UP
+6159 2847 Circle
+0.012 UP
+6191 2840 Circle
+0.009 UP
+6224 2835 Circle
+0.006 UP
+6257 2832 Circle
+0.006 UP
+6289 2831 Circle
+0.003 UP
+6322 2831 Circle
+0.003 UP
+6355 2834 Circle
+0.000 UP
+6387 2839 Circle
+0.000 UP
+6420 2845 Circle
+0.000 UP
+6453 2854 Circle
+0.000 UP
+6485 2864 Circle
+0.000 UP
+6518 2876 Circle
+0.000 UP
+6551 2890 Circle
+0.003 UP
+6583 2905 Circle
+0.003 UP
+6616 2922 Circle
+0.003 UP
+6649 2939 Circle
+0.003 UP
+6681 2957 Circle
+0.003 UP
+6714 2975 Circle
+0.003 UP
+6747 2993 Circle
+0.003 UP
+6779 3010 Circle
+0.003 UP
+6812 3024 Circle
+0.000 UP
+6845 3035 Circle
+0.000 UP
+6877 3043 Circle
+0.000 UP
+6910 3045 Circle
+0.000 UP
+2731 3418 Circle
+0.033 UP
+2762 3407 Circle
+0.075 UP
+2793 3382 Circle
+0.099 UP
+2823 3353 Circle
+0.111 UP
+2854 3322 Circle
+0.120 UP
+2885 3292 Circle
+0.123 UP
+2916 3262 Circle
+0.126 UP
+2947 3232 Circle
+0.126 UP
+2977 3204 Circle
+0.123 UP
+3008 3176 Circle
+0.120 UP
+3039 3150 Circle
+0.117 UP
+3070 3124 Circle
+0.111 UP
+3101 3100 Circle
+0.105 UP
+3131 3078 Circle
+0.096 UP
+3162 3057 Circle
+0.087 UP
+3193 3038 Circle
+0.081 UP
+3224 3020 Circle
+0.072 UP
+3255 3005 Circle
+0.063 UP
+3285 2991 Circle
+0.051 UP
+3316 2980 Circle
+0.045 UP
+3347 2971 Circle
+0.036 UP
+3378 2964 Circle
+0.030 UP
+3409 2960 Circle
+0.024 UP
+3439 2957 Circle
+0.018 UP
+3470 2957 Circle
+0.015 UP
+3501 2958 Circle
+0.012 UP
+3532 2962 Circle
+0.009 UP
+3563 2967 Circle
+0.006 UP
+3593 2973 Circle
+0.006 UP
+3624 2980 Circle
+0.006 UP
+3655 2988 Circle
+0.003 UP
+3686 2997 Circle
+0.003 UP
+3717 3006 Circle
+0.003 UP
+3747 3014 Circle
+0.003 UP
+3778 3023 Circle
+0.003 UP
+3809 3030 Circle
+0.000 UP
+3840 3036 Circle
+0.000 UP
+3871 3041 Circle
+0.000 UP
+3901 3044 Circle
+0.000 UP
+3932 3045 Circle
+0.000 UP
+3957 3045 Circle
+0.000 UP
+3982 3046 Circle
+0.000 UP
+4008 3047 Circle
+0.000 UP
+4033 3049 Circle
+0.000 UP
+4058 3052 Circle
+0.000 UP
+4083 3056 Circle
+0.000 UP
+4108 3060 Circle
+0.000 UP
+4133 3066 Circle
+0.000 UP
+4158 3072 Circle
+0.000 UP
+4184 3079 Circle
+0.000 UP
+4209 3087 Circle
+0.000 UP
+4234 3096 Circle
+0.000 UP
+4259 3106 Circle
+0.000 UP
+4284 3116 Circle
+0.000 UP
+4309 3128 Circle
+0.000 UP
+4334 3140 Circle
+0.000 UP
+4360 3153 Circle
+0.000 UP
+4385 3166 Circle
+0.000 UP
+4410 3181 Circle
+0.000 UP
+4435 3197 Circle
+0.000 UP
+4460 3213 Circle
+0.000 UP
+4485 3230 Circle
+0.000 UP
+4511 3248 Circle
+0.000 UP
+4536 3267 Circle
+0.000 UP
+4561 3286 Circle
+0.000 UP
+4586 3307 Circle
+0.000 UP
+4611 3328 Circle
+0.000 UP
+4636 3350 Circle
+0.000 UP
+4661 3373 Circle
+0.813 UP
+4687 3407 Circle
+0.816 UP
+4712 3442 Circle
+0.816 UP
+4737 3477 Circle
+0.816 UP
+4762 3511 Circle
+0.816 UP
+4787 3545 Circle
+0.816 UP
+4812 3577 Circle
+0.198 UP
+4837 3561 Circle
+0.171 UP
+4863 3530 Circle
+0.129 UP
+4888 3503 Circle
+0.069 UP
+4913 3481 Circle
+0.033 UP
+4938 3473 Circle
+0.033 UP
+4955 3473 Circle
+0.045 UP
+4971 3471 Circle
+0.081 UP
+4988 3466 Circle
+0.138 UP
+5005 3463 Circle
+0.198 UP
+5021 3463 Circle
+0.249 UP
+5038 3465 Circle
+0.288 UP
+5054 3469 Circle
+0.318 UP
+5071 3475 Circle
+0.339 UP
+5088 3481 Circle
+0.354 UP
+5104 3486 Circle
+0.366 UP
+5121 3492 Circle
+0.372 UP
+5138 3497 Circle
+0.378 UP
+5154 3500 Circle
+0.381 UP
+5171 3502 Circle
+0.381 UP
+5188 3501 Circle
+0.378 UP
+5204 3499 Circle
+0.378 UP
+5221 3494 Circle
+0.375 UP
+5237 3487 Circle
+0.372 UP
+5254 3478 Circle
+0.369 UP
+5271 3468 Circle
+0.366 UP
+5287 3456 Circle
+0.363 UP
+5304 3443 Circle
+0.360 UP
+5321 3429 Circle
+0.357 UP
+5337 3414 Circle
+0.354 UP
+5354 3399 Circle
+0.351 UP
+5370 3382 Circle
+0.345 UP
+5387 3365 Circle
+0.342 UP
+5404 3348 Circle
+0.339 UP
+5420 3329 Circle
+0.336 UP
+5437 3311 Circle
+0.333 UP
+5454 3293 Circle
+0.327 UP
+5470 3274 Circle
+0.321 UP
+5487 3255 Circle
+0.312 UP
+5504 3236 Circle
+0.303 UP
+5520 3218 Circle
+0.288 UP
+5537 3199 Circle
+0.264 UP
+5553 3181 Circle
+0.222 UP
+5570 3165 Circle
+0.138 UP
+5587 3151 Circle
+0.039 UP
+5603 3148 Circle
+0.039 UP
+5636 3148 Circle
+0.039 UP
+5669 3121 Circle
+0.039 UP
+5701 3095 Circle
+0.039 UP
+5734 3070 Circle
+0.039 UP
+5767 3046 Circle
+0.036 UP
+5799 3022 Circle
+0.036 UP
+5832 3000 Circle
+0.036 UP
+5865 2978 Circle
+0.489 UP
+5897 3023 Circle
+0.465 UP
+5930 3076 Circle
+0.450 UP
+5963 3131 Circle
+0.444 UP
+5995 3185 Circle
+0.441 UP
+6028 3237 Circle
+0.438 UP
+6061 3287 Circle
+0.438 UP
+6093 3333 Circle
+0.438 UP
+6126 3372 Circle
+0.435 UP
+6159 3402 Circle
+0.426 UP
+6191 3422 Circle
+0.414 UP
+6224 3431 Circle
+0.477 UP
+6257 3391 Circle
+0.456 UP
+6289 3337 Circle
+0.435 UP
+6322 3286 Circle
+0.405 UP
+6355 3236 Circle
+0.369 UP
+6387 3190 Circle
+0.324 UP
+6420 3148 Circle
+0.270 UP
+6453 3110 Circle
+0.213 UP
+6485 3079 Circle
+0.153 UP
+6518 3056 Circle
+0.102 UP
+6551 3039 Circle
+0.063 UP
+6583 3029 Circle
+0.039 UP
+6616 3025 Circle
+0.021 UP
+6649 3024 Circle
+0.012 UP
+6681 3026 Circle
+0.006 UP
+6714 3030 Circle
+0.003 UP
+6747 3034 Circle
+0.003 UP
+6779 3037 Circle
+0.000 UP
+6812 3041 Circle
+0.000 UP
+6845 3043 Circle
+0.000 UP
+6877 3045 Circle
+0.000 UP
+6910 3045 Circle
+0.561 UP
+2731 3509 Circle
+0.570 UP
+2762 3504 Circle
+0.585 UP
+2793 3490 Circle
+0.603 UP
+2823 3469 Circle
+0.618 UP
+2854 3445 Circle
+0.630 UP
+2885 3418 Circle
+0.633 UP
+2916 3391 Circle
+0.636 UP
+2947 3362 Circle
+0.630 UP
+2977 3334 Circle
+0.621 UP
+3008 3306 Circle
+0.600 UP
+3039 3280 Circle
+0.567 UP
+3070 3255 Circle
+0.516 UP
+3101 3233 Circle
+0.450 UP
+3131 3215 Circle
+0.375 UP
+3162 3203 Circle
+0.309 UP
+3193 3196 Circle
+0.261 UP
+3224 3194 Circle
+0.228 UP
+3255 3195 Circle
+0.213 UP
+3285 3199 Circle
+0.207 UP
+3316 3205 Circle
+0.207 UP
+3347 3211 Circle
+0.216 UP
+3378 3218 Circle
+0.228 UP
+3409 3223 Circle
+0.246 UP
+3439 3227 Circle
+0.267 UP
+3470 3228 Circle
+0.288 UP
+3501 3225 Circle
+0.309 UP
+3532 3218 Circle
+0.321 UP
+3563 3206 Circle
+0.327 UP
+3593 3192 Circle
+0.327 UP
+3624 3175 Circle
+0.327 UP
+3655 3158 Circle
+0.324 UP
+3686 3142 Circle
+0.318 UP
+3717 3126 Circle
+0.315 UP
+3747 3111 Circle
+0.312 UP
+3778 3098 Circle
+0.309 UP
+3809 3087 Circle
+0.306 UP
+3840 3079 Circle
+0.303 UP
+3871 3073 Circle
+0.303 UP
+3901 3069 Circle
+0.300 UP
+3932 3067 Circle
+0.300 UP
+3957 3067 Circle
+0.303 UP
+3982 3069 Circle
+0.303 UP
+4008 3074 Circle
+0.306 UP
+4033 3083 Circle
+0.309 UP
+4058 3094 Circle
+0.315 UP
+4083 3108 Circle
+0.318 UP
+4108 3126 Circle
+0.324 UP
+4133 3145 Circle
+0.330 UP
+4158 3167 Circle
+0.336 UP
+4184 3191 Circle
+0.342 UP
+4209 3217 Circle
+0.348 UP
+4234 3245 Circle
+0.354 UP
+4259 3274 Circle
+0.360 UP
+4284 3305 Circle
+0.366 UP
+4309 3336 Circle
+0.375 UP
+4334 3369 Circle
+0.381 UP
+4360 3403 Circle
+0.390 UP
+4385 3437 Circle
+0.399 UP
+4410 3472 Circle
+0.408 UP
+4435 3508 Circle
+0.417 UP
+4460 3543 Circle
+0.429 UP
+4485 3578 Circle
+0.441 UP
+4511 3613 Circle
+0.456 UP
+4536 3648 Circle
+0.471 UP
+4561 3681 Circle
+0.492 UP
+4586 3713 Circle
+0.513 UP
+4611 3742 Circle
+0.537 UP
+4636 3769 Circle
+0.180 UP
+4661 3768 Circle
+0.195 UP
+4687 3744 Circle
+0.207 UP
+4712 3717 Circle
+0.216 UP
+4737 3687 Circle
+0.219 UP
+4762 3656 Circle
+0.219 UP
+4787 3624 Circle
+0.213 UP
+4812 3592 Circle
+0.198 UP
+4837 3561 Circle
+0.000 UP
+4863 3585 Circle
+0.000 UP
+4888 3616 Circle
+0.000 UP
+4913 3647 Circle
+0.000 UP
+4938 3678 Circle
+0.000 UP
+4955 3678 Circle
+0.006 UP
+4971 3673 Circle
+0.036 UP
+4988 3670 Circle
+0.099 UP
+5005 3668 Circle
+0.165 UP
+5021 3664 Circle
+0.213 UP
+5038 3660 Circle
+0.249 UP
+5054 3655 Circle
+0.273 UP
+5071 3650 Circle
+0.288 UP
+5088 3645 Circle
+0.300 UP
+5104 3640 Circle
+0.309 UP
+5121 3637 Circle
+0.318 UP
+5138 3634 Circle
+0.324 UP
+5154 3633 Circle
+0.330 UP
+5171 3633 Circle
+0.336 UP
+5188 3635 Circle
+0.342 UP
+5204 3639 Circle
+0.348 UP
+5221 3646 Circle
+0.354 UP
+5237 3653 Circle
+0.360 UP
+5254 3663 Circle
+0.363 UP
+5271 3673 Circle
+0.369 UP
+5287 3684 Circle
+0.372 UP
+5304 3697 Circle
+0.375 UP
+5321 3710 Circle
+0.378 UP
+5337 3723 Circle
+0.381 UP
+5354 3737 Circle
+0.384 UP
+5370 3751 Circle
+0.390 UP
+5387 3766 Circle
+0.393 UP
+5404 3781 Circle
+0.396 UP
+5420 3796 Circle
+0.402 UP
+5437 3812 Circle
+0.408 UP
+5454 3827 Circle
+0.414 UP
+5470 3843 Circle
+0.423 UP
+5487 3859 Circle
+0.432 UP
+5504 3875 Circle
+0.441 UP
+5520 3890 Circle
+0.456 UP
+5537 3906 Circle
+0.477 UP
+5553 3921 Circle
+0.513 UP
+5570 3935 Circle
+0.591 UP
+5587 3948 Circle
+0.720 UP
+5603 3953 Circle
+0.720 UP
+5636 3953 Circle
+0.633 UP
+5669 3967 Circle
+0.444 UP
+5701 3967 Circle
+0.273 UP
+5734 3952 Circle
+0.192 UP
+5767 3927 Circle
+0.156 UP
+5799 3900 Circle
+0.141 UP
+5832 3872 Circle
+0.132 UP
+5865 3844 Circle
+0.132 UP
+5897 3817 Circle
+0.132 UP
+5930 3790 Circle
+0.141 UP
+5963 3763 Circle
+0.153 UP
+5995 3737 Circle
+0.180 UP
+6028 3712 Circle
+0.240 UP
+6061 3685 Circle
+0.375 UP
+6093 3653 Circle
+0.498 UP
+6126 3610 Circle
+0.519 UP
+6159 3557 Circle
+0.507 UP
+6191 3502 Circle
+0.492 UP
+6224 3446 Circle
+0.402 UP
+6257 3431 Circle
+0.393 UP
+6289 3424 Circle
+0.384 UP
+6322 3412 Circle
+0.378 UP
+6355 3396 Circle
+0.372 UP
+6387 3376 Circle
+0.369 UP
+6420 3354 Circle
+0.366 UP
+6453 3330 Circle
+0.360 UP
+6485 3305 Circle
+0.357 UP
+6518 3279 Circle
+0.351 UP
+6551 3253 Circle
+0.345 UP
+6583 3226 Circle
+0.339 UP
+6616 3201 Circle
+0.333 UP
+6649 3176 Circle
+0.327 UP
+6681 3153 Circle
+0.321 UP
+6714 3132 Circle
+0.315 UP
+6747 3113 Circle
+0.312 UP
+6779 3097 Circle
+0.306 UP
+6812 3084 Circle
+0.303 UP
+6845 3075 Circle
+0.303 UP
+6877 3069 Circle
+0.300 UP
+6910 3067 Circle
+0.345 UP
+2731 3514 Circle
+0.312 UP
+2762 3526 Circle
+0.270 UP
+2793 3553 Circle
+0.246 UP
+2823 3586 Circle
+0.228 UP
+2854 3621 Circle
+0.219 UP
+2885 3657 Circle
+0.210 UP
+2916 3694 Circle
+0.204 UP
+2947 3732 Circle
+0.198 UP
+2977 3770 Circle
+0.192 UP
+3008 3808 Circle
+0.189 UP
+3039 3845 Circle
+0.639 UP
+3070 3856 Circle
+0.579 UP
+3101 3837 Circle
+0.525 UP
+3131 3810 Circle
+0.480 UP
+3162 3778 Circle
+0.444 UP
+3193 3743 Circle
+0.414 UP
+3224 3707 Circle
+0.387 UP
+3255 3670 Circle
+0.363 UP
+3285 3634 Circle
+0.339 UP
+3316 3598 Circle
+0.315 UP
+3347 3563 Circle
+0.294 UP
+3378 3531 Circle
+0.267 UP
+3409 3501 Circle
+0.237 UP
+3439 3475 Circle
+0.207 UP
+3470 3454 Circle
+0.177 UP
+3501 3438 Circle
+0.150 UP
+3532 3429 Circle
+0.132 UP
+3563 3426 Circle
+0.120 UP
+3593 3428 Circle
+0.114 UP
+3624 3434 Circle
+0.111 UP
+3655 3442 Circle
+0.108 UP
+3686 3451 Circle
+0.111 UP
+3717 3462 Circle
+0.111 UP
+3747 3472 Circle
+0.114 UP
+3778 3482 Circle
+0.114 UP
+3809 3491 Circle
+0.117 UP
+3840 3499 Circle
+0.117 UP
+3871 3505 Circle
+0.117 UP
+3901 3508 Circle
+0.117 UP
+3932 3510 Circle
+0.117 UP
+3957 3510 Circle
+0.117 UP
+3982 3510 Circle
+0.117 UP
+4008 3512 Circle
+0.117 UP
+4033 3515 Circle
+0.117 UP
+4058 3520 Circle
+0.114 UP
+4083 3526 Circle
+0.114 UP
+4108 3533 Circle
+0.111 UP
+4133 3542 Circle
+0.111 UP
+4158 3552 Circle
+0.108 UP
+4184 3563 Circle
+0.108 UP
+4209 3575 Circle
+0.105 UP
+4234 3589 Circle
+0.102 UP
+4259 3603 Circle
+0.102 UP
+4284 3619 Circle
+0.099 UP
+4309 3636 Circle
+0.096 UP
+4334 3654 Circle
+0.093 UP
+4360 3673 Circle
+0.090 UP
+4385 3692 Circle
+0.090 UP
+4410 3712 Circle
+0.087 UP
+4435 3732 Circle
+0.087 UP
+4460 3751 Circle
+0.087 UP
+4485 3769 Circle
+0.087 UP
+4511 3785 Circle
+0.093 UP
+4536 3798 Circle
+0.105 UP
+4561 3806 Circle
+0.120 UP
+4586 3807 Circle
+0.138 UP
+4611 3801 Circle
+0.159 UP
+4636 3787 Circle
+0.180 UP
+4661 3768 Circle
+0.195 UP
+4687 3744 Circle
+0.207 UP
+4712 3717 Circle
+0.216 UP
+4737 3687 Circle
+0.219 UP
+4762 3656 Circle
+0.219 UP
+4787 3624 Circle
+0.213 UP
+4812 3592 Circle
+0.813 UP
+4837 3609 Circle
+0.810 UP
+4863 3641 Circle
+0.804 UP
+4888 3670 Circle
+0.801 UP
+4913 3699 Circle
+0.000 UP
+4938 3678 Circle
+0.000 UP
+4955 3678 Circle
+0.006 UP
+4971 3689 Circle
+0.042 UP
+4988 3702 Circle
+0.126 UP
+5005 3715 Circle
+0.207 UP
+5021 3727 Circle
+0.261 UP
+5038 3737 Circle
+0.297 UP
+5054 3746 Circle
+0.321 UP
+5071 3755 Circle
+0.336 UP
+5088 3764 Circle
+0.348 UP
+5104 3773 Circle
+0.357 UP
+5121 3783 Circle
+0.363 UP
+5138 3792 Circle
+0.366 UP
+5154 3801 Circle
+0.372 UP
+5171 3811 Circle
+0.375 UP
+5188 3820 Circle
+0.375 UP
+5204 3830 Circle
+0.378 UP
+5221 3839 Circle
+0.378 UP
+5237 3849 Circle
+0.378 UP
+5254 3858 Circle
+0.378 UP
+5271 3868 Circle
+0.378 UP
+5287 3878 Circle
+0.378 UP
+5304 3888 Circle
+0.375 UP
+5321 3898 Circle
+0.375 UP
+5337 3908 Circle
+0.372 UP
+5354 3918 Circle
+0.369 UP
+5370 3928 Circle
+0.363 UP
+5387 3938 Circle
+0.360 UP
+5404 3949 Circle
+0.354 UP
+5420 3960 Circle
+0.351 UP
+5437 3970 Circle
+0.345 UP
+5454 3981 Circle
+0.339 UP
+5470 3993 Circle
+0.105 UP
+5487 4000 Circle
+0.102 UP
+5504 4005 Circle
+0.102 UP
+5520 4012 Circle
+0.102 UP
+5537 4018 Circle
+0.108 UP
+5553 4022 Circle
+0.126 UP
+5570 4020 Circle
+0.105 UP
+5587 4006 Circle
+0.003 UP
+5603 3989 Circle
+0.003 UP
+5636 3989 Circle
+0.006 UP
+5669 4015 Circle
+0.006 UP
+5701 4040 Circle
+0.192 UP
+5734 4034 Circle
+0.186 UP
+5767 4005 Circle
+0.180 UP
+5799 3976 Circle
+0.177 UP
+5832 3948 Circle
+0.174 UP
+5865 3921 Circle
+0.171 UP
+5897 3895 Circle
+0.165 UP
+5930 3871 Circle
+0.162 UP
+5963 3849 Circle
+0.156 UP
+5995 3829 Circle
+0.153 UP
+6028 3812 Circle
+0.336 UP
+6061 3757 Circle
+0.195 UP
+6093 3705 Circle
+0.063 UP
+6126 3667 Circle
+0.036 UP
+6159 3641 Circle
+0.042 UP
+6191 3619 Circle
+0.048 UP
+6224 3600 Circle
+0.054 UP
+6257 3582 Circle
+0.057 UP
+6289 3566 Circle
+0.063 UP
+6322 3552 Circle
+0.066 UP
+6355 3539 Circle
+0.069 UP
+6387 3527 Circle
+0.072 UP
+6420 3517 Circle
+0.075 UP
+6453 3508 Circle
+0.078 UP
+6485 3500 Circle
+0.081 UP
+6518 3495 Circle
+0.084 UP
+6551 3491 Circle
+0.090 UP
+6583 3488 Circle
+0.093 UP
+6616 3487 Circle
+0.096 UP
+6649 3487 Circle
+0.099 UP
+6681 3489 Circle
+0.105 UP
+6714 3492 Circle
+0.108 UP
+6747 3496 Circle
+0.111 UP
+6779 3500 Circle
+0.114 UP
+6812 3503 Circle
+0.117 UP
+6845 3507 Circle
+0.117 UP
+6877 3509 Circle
+0.117 UP
+6910 3510 Circle
+0.345 UP
+2731 3514 Circle
+0.312 UP
+2762 3526 Circle
+0.270 UP
+2793 3553 Circle
+0.246 UP
+2823 3586 Circle
+0.228 UP
+2854 3621 Circle
+0.219 UP
+2885 3657 Circle
+0.210 UP
+2916 3694 Circle
+0.204 UP
+2947 3732 Circle
+0.198 UP
+2977 3770 Circle
+0.192 UP
+3008 3808 Circle
+0.189 UP
+3039 3845 Circle
+0.183 UP
+3070 3882 Circle
+0.177 UP
+3101 3917 Circle
+0.171 UP
+3131 3949 Circle
+0.162 UP
+3162 3976 Circle
+0.150 UP
+3193 3996 Circle
+0.138 UP
+3224 4005 Circle
+0.123 UP
+3255 4002 Circle
+0.114 UP
+3285 3989 Circle
+0.108 UP
+3316 3968 Circle
+0.105 UP
+3347 3942 Circle
+0.102 UP
+3378 3913 Circle
+0.099 UP
+3409 3882 Circle
+0.099 UP
+3439 3850 Circle
+0.099 UP
+3470 3819 Circle
+0.102 UP
+3501 3787 Circle
+0.102 UP
+3532 3757 Circle
+0.102 UP
+3563 3727 Circle
+0.105 UP
+3593 3697 Circle
+0.105 UP
+3624 3669 Circle
+0.105 UP
+3655 3643 Circle
+0.108 UP
+3686 3618 Circle
+0.108 UP
+3717 3595 Circle
+0.111 UP
+3747 3574 Circle
+0.114 UP
+3778 3555 Circle
+0.114 UP
+3809 3539 Circle
+0.114 UP
+3840 3527 Circle
+0.117 UP
+3871 3517 Circle
+0.117 UP
+3901 3511 Circle
+0.117 UP
+3932 3510 Circle
+0.117 UP
+3957 3510 Circle
+0.117 UP
+3982 3510 Circle
+0.117 UP
+4008 3512 Circle
+0.117 UP
+4033 3515 Circle
+0.117 UP
+4058 3520 Circle
+0.114 UP
+4083 3526 Circle
+0.114 UP
+4108 3533 Circle
+0.111 UP
+4133 3542 Circle
+0.111 UP
+4158 3552 Circle
+0.108 UP
+4184 3563 Circle
+0.108 UP
+4209 3575 Circle
+0.105 UP
+4234 3589 Circle
+0.102 UP
+4259 3603 Circle
+0.102 UP
+4284 3619 Circle
+0.099 UP
+4309 3636 Circle
+0.096 UP
+4334 3654 Circle
+0.093 UP
+4360 3673 Circle
+0.090 UP
+4385 3692 Circle
+0.090 UP
+4410 3712 Circle
+0.087 UP
+4435 3732 Circle
+0.087 UP
+4460 3751 Circle
+0.087 UP
+4485 3769 Circle
+0.087 UP
+4511 3785 Circle
+0.093 UP
+4536 3798 Circle
+0.105 UP
+4561 3806 Circle
+0.120 UP
+4586 3807 Circle
+0.138 UP
+4611 3801 Circle
+0.159 UP
+4636 3787 Circle
+0.567 UP
+4661 3792 Circle
+0.594 UP
+4687 3810 Circle
+0.627 UP
+4712 3824 Circle
+0.657 UP
+4737 3832 Circle
+0.684 UP
+4762 3835 Circle
+0.711 UP
+4787 3832 Circle
+0.732 UP
+4812 3823 Circle
+0.750 UP
+4837 3811 Circle
+0.000 UP
+4863 3778 Circle
+0.000 UP
+4888 3744 Circle
+0.000 UP
+4913 3711 Circle
+0.795 UP
+4938 3726 Circle
+0.795 UP
+4955 3726 Circle
+0.786 UP
+4971 3722 Circle
+0.750 UP
+4988 3724 Circle
+0.678 UP
+5005 3734 Circle
+0.603 UP
+5021 3749 Circle
+0.546 UP
+5038 3768 Circle
+0.507 UP
+5054 3789 Circle
+0.477 UP
+5071 3813 Circle
+0.459 UP
+5088 3837 Circle
+0.447 UP
+5104 3862 Circle
+0.435 UP
+5121 3887 Circle
+0.429 UP
+5138 3913 Circle
+0.426 UP
+5154 3938 Circle
+0.423 UP
+5171 3963 Circle
+0.420 UP
+5188 3987 Circle
+0.417 UP
+5204 4010 Circle
+0.405 UP
+5221 4030 Circle
+0.357 UP
+5237 4043 Circle
+0.270 UP
+5254 4046 Circle
+0.204 UP
+5271 4039 Circle
+0.168 UP
+5287 4030 Circle
+0.150 UP
+5304 4021 Circle
+0.141 UP
+5321 4012 Circle
+0.135 UP
+5337 4005 Circle
+0.129 UP
+5354 3999 Circle
+0.126 UP
+5370 3994 Circle
+0.123 UP
+5387 3991 Circle
+0.120 UP
+5404 3989 Circle
+0.117 UP
+5420 3989 Circle
+0.114 UP
+5437 3990 Circle
+0.111 UP
+5454 3992 Circle
+0.108 UP
+5470 3995 Circle
+0.333 UP
+5487 4004 Circle
+0.327 UP
+5504 4016 Circle
+0.321 UP
+5520 4028 Circle
+0.315 UP
+5537 4040 Circle
+0.309 UP
+5553 4052 Circle
+0.300 UP
+5570 4062 Circle
+0.285 UP
+5587 4066 Circle
+0.273 UP
+5603 4060 Circle
+0.273 UP
+5636 4060 Circle
+0.210 UP
+5669 4068 Circle
+0.405 UP
+5701 4057 Circle
+0.582 UP
+5734 4063 Circle
+0.678 UP
+5767 4077 Circle
+0.738 UP
+5799 4091 Circle
+0.777 UP
+5832 4099 Circle
+0.735 UP
+5865 4086 Circle
+0.618 UP
+5897 4047 Circle
+0.537 UP
+5930 3993 Circle
+0.486 UP
+5963 3934 Circle
+0.447 UP
+5995 3874 Circle
+0.405 UP
+6028 3814 Circle
+0.144 UP
+6061 3799 Circle
+0.138 UP
+6093 3791 Circle
+0.132 UP
+6126 3790 Circle
+0.129 UP
+6159 3798 Circle
+0.126 UP
+6191 3815 Circle
+0.123 UP
+6224 3836 Circle
+0.114 UP
+6257 3849 Circle
+0.114 UP
+6289 3838 Circle
+0.120 UP
+6322 3811 Circle
+0.120 UP
+6355 3778 Circle
+0.120 UP
+6387 3744 Circle
+0.117 UP
+6420 3713 Circle
+0.114 UP
+6453 3683 Circle
+0.111 UP
+6485 3656 Circle
+0.111 UP
+6518 3632 Circle
+0.111 UP
+6551 3610 Circle
+0.111 UP
+6583 3591 Circle
+0.111 UP
+6616 3574 Circle
+0.111 UP
+6649 3560 Circle
+0.114 UP
+6681 3548 Circle
+0.114 UP
+6714 3537 Circle
+0.114 UP
+6747 3529 Circle
+0.117 UP
+6779 3522 Circle
+0.117 UP
+6812 3516 Circle
+0.117 UP
+6845 3513 Circle
+0.117 UP
+6877 3510 Circle
+0.117 UP
+6910 3510 Circle
+0.888 UP
+2731 3718 Circle
+0.879 UP
+2762 3723 Circle
+0.861 UP
+2793 3736 Circle
+0.843 UP
+2823 3755 Circle
+0.828 UP
+2854 3777 Circle
+0.813 UP
+2885 3801 Circle
+0.801 UP
+2916 3823 Circle
+0.789 UP
+2947 3843 Circle
+0.768 UP
+2977 3858 Circle
+0.738 UP
+3008 3867 Circle
+0.696 UP
+3039 3867 Circle
+0.183 UP
+3070 3882 Circle
+0.177 UP
+3101 3917 Circle
+0.171 UP
+3131 3949 Circle
+0.162 UP
+3162 3976 Circle
+0.150 UP
+3193 3996 Circle
+0.138 UP
+3224 4005 Circle
+0.123 UP
+3255 4002 Circle
+0.114 UP
+3285 3989 Circle
+0.108 UP
+3316 3968 Circle
+0.105 UP
+3347 3942 Circle
+0.102 UP
+3378 3913 Circle
+0.099 UP
+3409 3882 Circle
+0.099 UP
+3439 3850 Circle
+0.099 UP
+3470 3819 Circle
+0.102 UP
+3501 3787 Circle
+0.102 UP
+3532 3757 Circle
+0.102 UP
+3563 3727 Circle
+0.105 UP
+3593 3697 Circle
+0.105 UP
+3624 3669 Circle
+0.105 UP
+3655 3643 Circle
+0.108 UP
+3686 3618 Circle
+0.108 UP
+3717 3595 Circle
+0.111 UP
+3747 3574 Circle
+0.114 UP
+3778 3555 Circle
+0.114 UP
+3809 3539 Circle
+0.114 UP
+3840 3527 Circle
+0.117 UP
+3871 3517 Circle
+0.117 UP
+3901 3511 Circle
+0.117 UP
+3932 3510 Circle
+0.117 UP
+3957 3510 Circle
+0.117 UP
+3982 3512 Circle
+0.114 UP
+4008 3518 Circle
+0.111 UP
+4033 3528 Circle
+0.108 UP
+4058 3541 Circle
+0.105 UP
+4083 3555 Circle
+0.099 UP
+4108 3571 Circle
+0.096 UP
+4133 3588 Circle
+0.090 UP
+4158 3605 Circle
+0.087 UP
+4184 3623 Circle
+0.084 UP
+4209 3640 Circle
+0.081 UP
+4234 3658 Circle
+0.075 UP
+4259 3677 Circle
+0.072 UP
+4284 3696 Circle
+0.069 UP
+4309 3715 Circle
+0.063 UP
+4334 3736 Circle
+0.060 UP
+4360 3757 Circle
+0.057 UP
+4385 3778 Circle
+0.051 UP
+4410 3801 Circle
+0.048 UP
+4435 3825 Circle
+0.045 UP
+4460 3849 Circle
+0.039 UP
+4485 3875 Circle
+0.036 UP
+4511 3902 Circle
+0.033 UP
+4536 3930 Circle
+0.030 UP
+4561 3959 Circle
+0.027 UP
+4586 3990 Circle
+0.024 UP
+4611 4021 Circle
+0.021 UP
+4636 4054 Circle
+0.000 UP
+4661 4078 Circle
+0.000 UP
+4687 4038 Circle
+0.000 UP
+4712 3999 Circle
+0.000 UP
+4737 3960 Circle
+0.000 UP
+4762 3922 Circle
+0.000 UP
+4787 3885 Circle
+0.000 UP
+4812 3849 Circle
+0.000 UP
+4837 3813 Circle
+0.765 UP
+4863 3794 Circle
+0.777 UP
+4888 3774 Circle
+0.786 UP
+4913 3751 Circle
+0.795 UP
+4938 3726 Circle
+0.795 UP
+4955 3726 Circle
+0.783 UP
+4971 3735 Circle
+0.735 UP
+4988 3751 Circle
+0.645 UP
+5005 3774 Circle
+0.552 UP
+5021 3804 Circle
+0.489 UP
+5038 3839 Circle
+0.444 UP
+5054 3877 Circle
+0.414 UP
+5071 3917 Circle
+0.390 UP
+5088 3958 Circle
+0.372 UP
+5104 3999 Circle
+0.354 UP
+5121 4041 Circle
+0.339 UP
+5138 4082 Circle
+0.324 UP
+5154 4123 Circle
+0.306 UP
+5171 4163 Circle
+0.060 UP
+5188 4156 Circle
+0.063 UP
+5204 4137 Circle
+0.075 UP
+5221 4123 Circle
+0.123 UP
+5237 4117 Circle
+0.213 UP
+5254 4123 Circle
+0.279 UP
+5271 4139 Circle
+0.315 UP
+5287 4159 Circle
+0.336 UP
+5304 4182 Circle
+0.348 UP
+5321 4204 Circle
+0.120 UP
+5337 4208 Circle
+0.123 UP
+5354 4200 Circle
+0.126 UP
+5370 4192 Circle
+0.126 UP
+5387 4185 Circle
+0.129 UP
+5404 4178 Circle
+0.132 UP
+5420 4172 Circle
+0.138 UP
+5437 4167 Circle
+0.141 UP
+5454 4162 Circle
+0.147 UP
+5470 4157 Circle
+0.150 UP
+5487 4152 Circle
+0.156 UP
+5504 4147 Circle
+0.165 UP
+5520 4141 Circle
+0.174 UP
+5537 4135 Circle
+0.264 UP
+5553 4112 Circle
+0.210 UP
+5570 4091 Circle
+0.150 UP
+5587 4085 Circle
+0.120 UP
+5603 4091 Circle
+0.120 UP
+5636 4091 Circle
+0.225 UP
+5669 4093 Circle
+0.204 UP
+5701 4064 Circle
+0.009 UP
+5734 4064 Circle
+0.012 UP
+5767 4089 Circle
+0.015 UP
+5799 4112 Circle
+0.015 UP
+5832 4135 Circle
+0.018 UP
+5865 4158 Circle
+0.021 UP
+5897 4180 Circle
+0.024 UP
+5930 4201 Circle
+0.030 UP
+5963 4222 Circle
+0.033 UP
+5995 4241 Circle
+0.039 UP
+6028 4258 Circle
+0.210 UP
+6061 4221 Circle
+0.207 UP
+6093 4172 Circle
+0.207 UP
+6126 4124 Circle
+0.204 UP
+6159 4078 Circle
+0.207 UP
+6191 4035 Circle
+0.216 UP
+6224 4000 Circle
+0.231 UP
+6257 3984 Circle
+0.231 UP
+6289 4002 Circle
+0.228 UP
+6322 4044 Circle
+0.225 UP
+6355 4099 Circle
+0.096 UP
+6387 4077 Circle
+0.096 UP
+6420 4030 Circle
+0.096 UP
+6453 3982 Circle
+0.099 UP
+6485 3934 Circle
+0.099 UP
+6518 3887 Circle
+0.099 UP
+6551 3840 Circle
+0.102 UP
+6583 3795 Circle
+0.102 UP
+6616 3751 Circle
+0.105 UP
+6649 3709 Circle
+0.105 UP
+6681 3669 Circle
+0.108 UP
+6714 3632 Circle
+0.108 UP
+6747 3598 Circle
+0.111 UP
+6779 3568 Circle
+0.114 UP
+6812 3544 Circle
+0.117 UP
+6845 3525 Circle
+0.117 UP
+6877 3514 Circle
+0.117 UP
+6910 3510 Circle
+0.183 UP
+2947 4284 Circle
+0.189 UP
+2977 4251 Circle
+0.204 UP
+3008 4227 Circle
+0.234 UP
+3039 4213 Circle
+0.276 UP
+3070 4210 Circle
+0.318 UP
+3101 4217 Circle
+0.354 UP
+3131 4233 Circle
+0.381 UP
+3162 4253 Circle
+0.396 UP
+3193 4278 Circle
+0.126 UP
+3563 4284 Circle
+0.123 UP
+3593 4255 Circle
+0.120 UP
+3624 4226 Circle
+0.120 UP
+3655 4198 Circle
+0.117 UP
+3686 4172 Circle
+0.117 UP
+3717 4147 Circle
+0.117 UP
+3747 4125 Circle
+0.114 UP
+3778 4105 Circle
+0.114 UP
+3809 4088 Circle
+0.114 UP
+3840 4075 Circle
+0.114 UP
+3871 4065 Circle
+0.114 UP
+3901 4059 Circle
+0.111 UP
+3932 4057 Circle
+0.111 UP
+3957 4057 Circle
+0.114 UP
+3982 4059 Circle
+0.114 UP
+4008 4068 Circle
+0.114 UP
+4033 4081 Circle
+0.114 UP
+4058 4100 Circle
+0.117 UP
+4083 4124 Circle
+0.117 UP
+4108 4153 Circle
+0.117 UP
+4133 4186 Circle
+0.120 UP
+4158 4223 Circle
+0.120 UP
+4184 4264 Circle
+0.294 UP
+4485 4266 Circle
+0.297 UP
+4511 4236 Circle
+0.294 UP
+4536 4212 Circle
+0.285 UP
+4561 4196 Circle
+0.273 UP
+4586 4187 Circle
+0.000 UP
+4611 4160 Circle
+0.000 UP
+4636 4119 Circle
+0.018 UP
+4661 4089 Circle
+0.015 UP
+4687 4124 Circle
+0.015 UP
+4712 4161 Circle
+0.012 UP
+4737 4199 Circle
+0.012 UP
+4762 4237 Circle
+0.012 UP
+4787 4277 Circle
+0.063 UP
+5104 4281 Circle
+0.063 UP
+5121 4253 Circle
+0.063 UP
+5138 4226 Circle
+0.063 UP
+5154 4201 Circle
+0.063 UP
+5171 4178 Circle
+0.282 UP
+5188 4199 Circle
+0.243 UP
+5204 4230 Circle
+0.195 UP
+5221 4250 Circle
+0.150 UP
+5237 4256 Circle
+0.132 UP
+5254 4253 Circle
+0.123 UP
+5271 4246 Circle
+0.120 UP
+5287 4236 Circle
+0.120 UP
+5304 4227 Circle
+0.120 UP
+5321 4217 Circle
+0.357 UP
+5337 4227 Circle
+0.369 UP
+5354 4250 Circle
+0.381 UP
+5370 4271 Circle
+0.372 UP
+5470 4273 Circle
+0.348 UP
+5487 4241 Circle
+0.330 UP
+5504 4208 Circle
+0.315 UP
+5520 4174 Circle
+0.294 UP
+5537 4141 Circle
+0.189 UP
+5553 4128 Circle
+0.207 UP
+5570 4120 Circle
+0.240 UP
+5587 4116 Circle
+0.270 UP
+5603 4119 Circle
+0.270 UP
+5636 4119 Circle
+0.282 UP
+5669 4095 Circle
+0.291 UP
+5701 4131 Circle
+0.297 UP
+5734 4165 Circle
+0.303 UP
+5767 4199 Circle
+0.306 UP
+5799 4233 Circle
+0.192 UP
+5832 4246 Circle
+0.237 UP
+5865 4216 Circle
+0.351 UP
+5897 4215 Circle
+0.426 UP
+5930 4228 Circle
+0.462 UP
+5963 4247 Circle
+0.480 UP
+5995 4269 Circle
+0.216 UP
+6028 4270 Circle
+0.045 UP
+6061 4272 Circle
+0.051 UP
+6093 4284 Circle
+0.057 UP
+6126 4290 Circle
+0.066 UP
+6159 4290 Circle
+0.075 UP
+6191 4282 Circle
+0.081 UP
+6224 4265 Circle
+0.087 UP
+6257 4239 Circle
+0.090 UP
+6289 4206 Circle
+0.093 UP
+6322 4166 Circle
+0.093 UP
+6355 4123 Circle
+0.225 UP
+6387 4159 Circle
+0.222 UP
+6420 4223 Circle
+0.219 UP
+6453 4289 Circle
+0.123 UP
+6616 4263 Circle
+0.120 UP
+6649 4225 Circle
+0.120 UP
+6681 4190 Circle
+0.117 UP
+6714 4158 Circle
+0.117 UP
+6747 4129 Circle
+0.114 UP
+6779 4104 Circle
+0.114 UP
+6812 4084 Circle
+0.114 UP
+6845 4069 Circle
+0.114 UP
+6877 4060 Circle
+0.111 UP
+6910 4057 Circle
+0.294 UP
+4485 4266 Circle
+0.297 UP
+4511 4236 Circle
+0.294 UP
+4536 4212 Circle
+0.285 UP
+4561 4196 Circle
+0.273 UP
+4586 4187 Circle
+0.255 UP
+4611 4187 Circle
+0.237 UP
+4636 4197 Circle
+0.219 UP
+4661 4215 Circle
+0.201 UP
+4687 4239 Circle
+0.189 UP
+4712 4268 Circle
+0.339 UP
+5587 4281 Circle
+0.321 UP
+5603 4267 Circle
+0.321 UP
+5636 4267 Circle
+0.309 UP
+5832 4266 Circle
+0.000 UP
+4536 4288 Circle
+0.000 UP
+4561 4245 Circle
+0.000 UP
+4586 4202 Circle
+0.255 UP
+4611 4187 Circle
+0.237 UP
+4636 4197 Circle
+0.219 UP
+4661 4215 Circle
+0.201 UP
+4687 4239 Circle
+0.189 UP
+4712 4268 Circle
+% End plot #1
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+2731 4291 N
+0 -3343 V
+4179 0 V
+0 3343 V
+-4179 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica
+%%Pages: 1
